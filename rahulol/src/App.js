@@ -18,7 +18,7 @@ function App() {
       <div> 
       <Hero />
       </div>
-      <div className="float-right"><img alt="moth" src={Moth} /></div>
+      <div className="mt-40 float-right"><img alt="moth" src={Moth} /></div>
     </div>
   );
 }
