@@ -66,12 +66,9 @@ const Hero = () => {
       </h1>
       {/* <br /> */}
       {/* <br /> */}
-      <h1 className="text-6xl mt-10 text-pink-300 font-bold" style={bubbleStyleB}>
-      mumbai , 
+      <h1 className="text-6xl mb-10 text-pink-300 font-bold" style={bubbleStyleB}>
+       &nbsp;&nbsp; mumbai ,  &nbsp;&nbsp;india
       </h1>
-      <div className="text-6xl text-pink-300 font-bold" style={bubbleStyleB}>
-        india
-      </div>
         </div>
       </section>
       <div className="sword-container mt-40 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-12 w-40" style={{ transform: `translateY(${swordPosition}px)` }}>
