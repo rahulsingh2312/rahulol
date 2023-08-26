@@ -15,9 +15,9 @@ function App() {
           Sorry, your browser doesn't support videos.
         </video>
       </div>
-      
+      <div> 
       <Hero />
-     
+      </div>
       <div className="float-right"><img alt="moth" src={Moth} /></div>
     </div>
   );
