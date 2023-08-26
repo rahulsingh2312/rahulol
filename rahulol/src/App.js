@@ -15,10 +15,10 @@ function App() {
           Sorry, your browser doesn't support videos.
         </video>
       </div>
-      
+      <div> 
       <Hero />
-     
-      <div className="float-right"><img alt="moth" src={Moth} /></div>
+      </div>
+      <div className="mt-40 float-right"><img alt="moth" src={Moth} /></div>
     </div>
   );
 }
