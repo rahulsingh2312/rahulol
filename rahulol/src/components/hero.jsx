@@ -19,7 +19,7 @@ const Hero = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const translateXA = 100 + scrollY;
+  const translateXA = 40 + scrollY;
   const translateXB = 100 - scrollY;
   const translateY = -74.3436 - scrollY * 0.5;
   const rotateZ = 0 + scrollY * 0.1;
@@ -64,7 +64,7 @@ const Hero = () => {
       <h1 className="text-6xl chat-bubble text-pink-300 font-bold" style={bubbleStyleA}>
          developer*
       </h1>
-      <br />
+      {/* <br /> */}
       {/* <br /> */}
       <h1 className="text-6xl mb-10 text-pink-300 font-bold" style={bubbleStyleB}>
         mumbai , india
