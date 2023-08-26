@@ -61,7 +61,7 @@ const Hero = () => {
         {/* Content of the chat bubble */}
       </div>
 
-      <h1 className="text-6xl chat-bubble text-pink-300 font-bold" style={bubbleStyleA}>
+      <h1 className="text-6xl mb-5 chat-bubble text-pink-300 font-bold" style={bubbleStyleA}>
          developer*
       </h1>
       {/* <br /> */}
