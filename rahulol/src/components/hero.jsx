@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import Rahul from "../images/rahul.png";
+import Navbar from "./navbar";
 // import { useState } from "react";
 // import Crystal from '../images/crystal.svg';
 import '../App.css';
@@ -47,7 +47,7 @@ const Hero = () => {
 
   return (
     <div className="hero-container">
-      <h1 className="text-7xl text-white p-5 font-bold">RAHUL</h1>
+      <Navbar />
       <section className="absolute flex text-white justify-center items-center inset-0 ">
         <div
           className="image-container"
