@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#">
+        <a href="google.com">
           <h1 className="text-7xl text-white p-5 font-bold">RAHUL</h1>
         </a>
         <button
