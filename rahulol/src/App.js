@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
 import Hero from './components/hero';
-import Navbar from './components/navbar';
 import Moth from './images/moth.svg';
 
 import Star from './images/star.mp4'; // Make sure the video path is correct
-import Crystal from './images/crystal.svg';
+// import Crystal from './images/crystal.svg';
 
 function App() {
   return (

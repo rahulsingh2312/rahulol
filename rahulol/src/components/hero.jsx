@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Rahul from "../images/rahul.png";
+// import Rahul from "../images/rahul.png";
 // import { useState } from "react";
-import Crystal from '../images/crystal.svg';
+// import Crystal from '../images/crystal.svg';
 import '../App.css';
 import Sword from '../images/Sword.svg';
 
