@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Navbar() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  // State to manage the mobile menu open/closed state
+  const [isNavOpen, setIsNavOpen] = useState(true);
 
+  // Handle side effects related to isNavOpen changes
+  // Function to toggle the mobile menu state
   const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
+    console.log("hi");
+    setIsNavOpen(false);
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="google.com">
-          <h1 className="text-7xl text-white p-5 font-bold">RAHUL</h1>
-        </a>
+    <nav onClick={()=> toggleNav} className="bg-white border-gray-200 dark:bg-gray-900">
+      <div  className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        {/* Button to toggle the mobile menu */}
         <button
-          onClick={toggleNav}
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded={isNavOpen}
+           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-red-500 rounded-lg md:hidden hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-red-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        //   aria-controls="navbar-default"
+        //   aria-expanded={isNavOpen}
         >
-          <span className="sr-only">Open main menu</span>
+          {/* <span className="sr-only">Open main menu</span> */}
           <svg
             className="w-5 h-5"
             aria-hidden="true"
@@ -37,16 +37,18 @@ function Navbar() {
             />
           </svg>
         </button>
+
+        {/* Mobile menu */}
         <div
           className={`${
             isNavOpen ? 'block' : 'hidden'
-          } w-full md:block md:w-auto`}
+          } md:block md:w-auto w-full md:relative`}
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            {/* Menu items */}
             <li>
               <a
-              // eslint-disable-next-line
                 href="google.com"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
@@ -55,7 +57,6 @@ function Navbar() {
             </li>
             <li>
               <a
-              // eslint-disable-next-line
                 href="google.com"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
@@ -64,7 +65,6 @@ function Navbar() {
             </li>
             <li>
               <a
-              // eslint-disable-next-line
                 href="google.com"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
