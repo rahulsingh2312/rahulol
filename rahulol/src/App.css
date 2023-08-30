@@ -2,10 +2,10 @@
   /* position: relative; */
 /* } */
 
-/* .image-container { */
-  /* position: relative; */
-  /* overflow: hidden; */
-/* } */
+.image-container { 
+  position: relative;
+  overflow: hidden;
+}
 .background-video {
   position: fixed;
   top: 0;

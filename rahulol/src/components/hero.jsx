@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./navbar";
+// import Navbar from "./navbar";
 // import { useState } from "react";
 // import Crystal from '../images/crystal.svg';
 import '../App.css';
 import Sword from '../images/Sword.svg';
 
-const Hero = () => {
+const Hero = ({ isNavOpen }) => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -44,36 +44,40 @@ const Hero = () => {
   //   transform: `translateY(${scrollY}px)`,
   // };
   const swordPosition = scrollY * 1.2;
+  const initialSwordTop = 174; // Initial top position of the sword
+  const swordTop = isNavOpen ? initialSwordTop + 140 : initialSwordTop; // Adjust as needed
 
+  
   return (
     <div className="hero-container">
-      <Navbar />
-      <section className="absolute flex text-white justify-center items-center inset-0 ">
+      {/* <Navbar /> */}
+      <div className="sword-container w-1/3 md:w-40 absolute top-44 left-2 md:right-16 z-10" style={{ transform: `translateY(${swordPosition}px)`,  top: swordTop,
+          transition: 'top 0.3s ease-out', }}>
+        <img alt="sword" src={Sword} />
+      </div>
+      <section className=" flex text-white justify-center items-center ">
         <div
-          className="image-container"
-          // style={{ transform: `rotate(${rotationAngle}deg)` }}
+          
         >
+          
           <br/ >
           <br/ >
           <br/ > 
-          {/* <img src={Rahul} alt="pfp" /> */}
-          <div className="chat-bubble" style={bubbleStyleA}>
-        {/* Content of the chat bubble */}
-      </div>
+        
 
-      <h1 className="text-6xl mb-5 chat-bubble text-pink-300 font-bold" style={bubbleStyleA}>
-         developer*
-      </h1>
-      {/* <br /> */}
-      {/* <br /> */}
-      <h1 className="text-6xl mb-10 text-pink-300 font-bold" style={bubbleStyleB}>
-       &nbsp;&nbsp; mumbai ,  &nbsp;&nbsp;india
-      </h1>
+          <h1 className={`text-4xl md:text-6xl md:mt-40 chat-bubble text-pink-300 font-bold`} style={bubbleStyleA}>
+      developer*
+    </h1>
+    <br/>
+    <h1 className={`text-4xl md:text-6xl text-pink-300 font-bold`} style={bubbleStyleB}>
+      mumbai ,  &nbsp;india
+    </h1>
         </div>
-      </section>
-      <div className="sword-container mt-40 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-12 w-40" style={{ transform: `translateY(${swordPosition}px)` }}>
+</section>
+
+      {/* <div className="sword-container w-40" style={{ transform: `translateY(${swordPosition}px)` }}>
         <img alt="sword" src={Sword} />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 
-function Navbar() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+function Navbar({toggleNav}) {
+  const [isNavOpen, setIsNavOpen] = useState();
 
-  const toggleNav = () => {
+  const handleToggleNav = () => {
     setIsNavOpen(!isNavOpen);
+    toggleNav(); // Call the function received from props
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav z-10 className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="google.com">
-          <h1 className="text-7xl text-white p-5 font-bold">RAHUL</h1>
+          <h1 className="text-4xl p-1 text-white font-bold">RAHUL</h1>
         </a>
         <button
-          onClick={toggleNav}
+          onClick={handleToggleNav}
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
