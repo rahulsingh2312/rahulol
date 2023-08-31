@@ -45,7 +45,7 @@ const Hero = ({ isNavOpen }) => {
   // };
   const swordPosition = scrollY * 1.2;
   const initialSwordTop = 174; // Initial top position of the sword
-  const swordTop = isNavOpen ? initialSwordTop + 140 : initialSwordTop; // Adjust as needed
+  const swordTop = isNavOpen ? initialSwordTop + 170 : initialSwordTop; // Adjust as needed
 
   
   return (

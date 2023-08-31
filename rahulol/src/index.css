@@ -12,7 +12,9 @@ body {
 .fontpress{
   font-family: 'Press Start 2P';
 }
-
+.helvetica{
+  font-family:  Helvetica;
+}
 code {
   font-family: 'Rubik Mono One';
 }
