@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 // import Crystal from '../images/crystal.svg';
 import '../App.css';
 import Sword from '../images/Sword.svg';
-
+import Star from '../images/star.mp4';
 const Hero = ({ isNavOpen }) => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -51,6 +51,14 @@ const Hero = ({ isNavOpen }) => {
   return (
     <div className="hero-container">
       {/* <Navbar /> */}
+
+      <div className="background-video">
+        <video autoPlay muted loop id="bg-video">
+          <source src={Star} type="video/mp4" />
+          Sorry, your browser doesn't support videos.
+        </video>
+      </div>
+
       <div className="sword-container w-1/3 md:w-40 absolute top-44 left-2 md:right-16 z-10" style={{ transform: `translateY(${swordPosition}px)`,  top: swordTop,
           transition: 'top 0.3s ease-out', }}>
         <img alt="sword" src={Sword} />
@@ -65,12 +73,13 @@ const Hero = ({ isNavOpen }) => {
           <br/ > 
         
 
-          <h1 className={`text-4xl md:text-6xl md:mt-40 chat-bubble text-pink-300 font-bold`} style={bubbleStyleA}>
+          <h1 className={`text-4xl mt-40 md:text-6xl md:mt-40 chat-bubble text-pink-300 font-bold`} style={bubbleStyleA}>
       developer*
     </h1>
     <br/>
+    
     <h1 className={`text-4xl md:text-6xl text-pink-300 font-bold`} style={bubbleStyleB}>
-      mumbai ,  &nbsp;india
+      &delusion
     </h1>
         </div>
 </section>
