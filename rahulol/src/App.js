@@ -3,6 +3,7 @@ import './App.css';
 import Hero from './components/hero';
 import Navbar from './components/navbar';
 import Aboutme from './components/aboutme';
+import Contactme from './components/contactme';
 import Moth from './images/moth.svg';
 import React, { useState} from "react";
 
@@ -25,9 +26,10 @@ function App() {
       
       <div><br/></div>
       <Aboutme />
+      <Contactme />
       {/* <Hero /> */}
       
-      <div className="mt-40 float-right"><img alt="moth" src={Moth} /></div>
+      {/* <div className="mt-40 float-right"><img alt="moth" src={Moth} /></div> */}
     </div>
   );
 }

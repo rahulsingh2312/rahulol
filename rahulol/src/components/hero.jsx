@@ -7,18 +7,26 @@ import Sword from '../images/Sword.svg';
 import Star from '../images/star.mp4';
 const Hero = ({ isNavOpen }) => {
   const [scrollY, setScrollY] = useState(0);
-
+  const [showVideo, setShowVideo] = useState(true);
   useEffect(() => {
+
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
+    if (scrollY > 500) {
+      setShowVideo(false); // Hide the video
+    } else {
+      setShowVideo(true); // Show the video
+    }
+  
+
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [scrollY]);
   const translateXA = 40 + scrollY;
   const translateXB = 100 - scrollY;
   const translateY = -74.3436 - scrollY * 0.5;
@@ -52,17 +60,27 @@ const Hero = ({ isNavOpen }) => {
     <div className="hero-container">
       {/* <Navbar /> */}
 
-      <div className="background-video">
-        <video autoPlay muted loop id="bg-video">
-          <source src={Star} type="video/mp4" />
-          Sorry, your browser doesn't support videos.
-        </video>
-      </div>
+        {/* Background Video */}
+        {showVideo && (
+        <div className="background-video">
+          <video autoPlay muted loop id="bg-video">
+            <source src={Star} type="video/mp4" />
+            Sorry, your browser doesn't support videos.
+          </video>
+        </div>
+      )}
 
-      <div className="sword-container w-1/3 md:w-40 absolute top-44 left-2 md:right-16 z-10" style={{ transform: `translateY(${swordPosition}px)`,  top: swordTop,
+      {/* Background Color (shown when video is hidden) */}
+      {!showVideo && (
+        <div className="background-color" style={{ backgroundColor: "black", width: "100%", height: "100vh", position: "fixed", top: 0, left: 0, zIndex: -1 }}>
+          {/* Add content or components for the background color */}
+        </div>
+      )}
+
+{showVideo && (<div className="sword-container w-1/3 md:w-40 absolute top-44 left-2 md:right-16 z-10" style={{ transform: `translateY(${swordPosition}px)`,  top: swordTop,
           transition: 'top 0.3s ease-out', }}>
         <img alt="sword" src={Sword} />
-      </div>
+      </div> )}
       <section className=" flex text-white justify-center items-center ">
         <div
           
