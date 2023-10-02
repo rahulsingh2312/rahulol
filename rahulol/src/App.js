@@ -4,7 +4,8 @@ import Hero from './components/hero';
 import Navbar from './components/navbar';
 import Aboutme from './components/aboutme';
 import Contactme from './components/contactme';
-import Moth from './images/moth.svg';
+import Skills from './components/skills';
+// import Moth from './images/moth.svg';
 import React, { useState} from "react";
 
  // Make sure the video path is correct
@@ -26,6 +27,7 @@ function App() {
       
       <div><br/></div>
       <Aboutme />
+      <Skills />
       <Contactme />
       {/* <Hero /> */}
       

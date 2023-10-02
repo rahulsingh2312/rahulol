@@ -13,7 +13,7 @@ const Hero = ({ isNavOpen }) => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
-    if (scrollY > 500) {
+    if (scrollY > 400) {
       setShowVideo(false); // Hide the video
     } else {
       setShowVideo(true); // Show the video
