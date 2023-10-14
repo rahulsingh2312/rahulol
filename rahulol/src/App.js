@@ -27,7 +27,7 @@ function App() {
       
       <div><br/></div>
       <Aboutme />
-      <Skills />
+      <Skills  />
       <Contactme />
       {/* <Hero /> */}
       

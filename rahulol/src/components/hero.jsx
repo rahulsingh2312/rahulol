@@ -53,7 +53,7 @@ const Hero = ({ isNavOpen }) => {
   // };
   const swordPosition = scrollY * 1.2;
   const initialSwordTop = 174; // Initial top position of the sword
-  const swordTop = isNavOpen ? initialSwordTop + 170 : initialSwordTop; // Adjust as needed
+  const swordTop = isNavOpen ? initialSwordTop + 210 : initialSwordTop; // Adjust as needed
 
   
   return (
@@ -77,7 +77,7 @@ const Hero = ({ isNavOpen }) => {
         </div>
       )}
 
-{showVideo && (<div className="sword-container w-1/3 md:w-40 absolute top-44 left-2 md:right-16 z-10" style={{ transform: `translateY(${swordPosition}px)`,  top: swordTop,
+{showVideo && (<div className="sword-container w-1/3 md:w-70 absolute top-44 left-2 md:right-16 z-10" style={{ transform: `translateY(${swordPosition}px)`,  top: swordTop,
           transition: 'top 0.3s ease-out', }}>
         <img alt="sword" src={Sword} />
       </div> )}

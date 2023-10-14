@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from "@emailjs/browser";
 import '../App.css';
 let hi ="<3"
 
-function contact() {
+function Contact() {
+  const form = useRef(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const currentForm = form.current;
+    if (currentForm == null) return;
+    emailjs.sendForm('service_8x11px8', 'contact_form', currentForm, '2LLYXIsnN7NoYlrrJ')
+      .then((result) => {
+          // console.log(result.text);
+          alert("Email Sent");
+          console.log(result.text);
+          window.location.reload();
+      }, (error) => {
+        console.log("hi")
+          console.log(error.text);
+      });
+  };
+
   return (
-    <div className='pirateone'>
+    <div id='getintouch' className='pirateone'>
       <div className='md:flex sm:mt-40'>
         <div className='md:w-1/2 md:ml-80 text-6xl md:text-8xl p-10 text-pink-300 font-bold'>
           Get In Touch!
@@ -14,14 +33,14 @@ function contact() {
           </div>
         </div>
         <div className='md:w-1/2 mt-6 md:mr-40 text-4xl sm:ml-10 sm:mr-10 sm:mt-0'>
-          <form className='text-center'>
+          <form className='text-center'  ref={form} onSubmit={sendEmail}>
             <div className='mb-4'>
               <input
                 type='text'
                 label='name'
                 id='name'
                 style={{ backgroundColor: 'transparent' }}
-                name='name'
+                name='from_name'
                 placeholder='Name'
                 required
                 className='w-full p-2 border-b border-pink-300 text-pink-300 focus:outline-none focus:border-pink-500'
@@ -33,7 +52,7 @@ function contact() {
                 style={{ backgroundColor: 'transparent' }}
                 type='email'
                 id='email'
-                name='email'
+                name='from_email'
                 placeholder='Email'
                 required
                 className='w-full p-2 border-b border-pink-300 text-pink-300 focus:outline-none focus:border-pink-500'
@@ -44,7 +63,7 @@ function contact() {
               <textarea
                 id='howCanIHelp'
                 style={{ backgroundColor: 'transparent' }}
-                name='howCanIHelp'
+                name='message'
                 placeholder='How can I help?'
                 required
                 className='w-full p-2 border-b bg-gray-100 text-pink-300 border-pink-300 focus:outline-none focus:border-pink-500'
@@ -67,4 +86,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;
