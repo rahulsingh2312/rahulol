@@ -12,9 +12,9 @@ function Navbar({toggleNav}) {
       console.log(`Scrolled to section: ${sectionId}`);
     }
     // Close the mobile navigation menu if open
-    if (isNavOpen) {
-      setIsNavOpen(false);
-    }
+    // if (isNavOpen) {
+    //   setIsNavOpen(false);
+    // }
   };
   const handleToggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -22,7 +22,7 @@ function Navbar({toggleNav}) {
   };
 
   return (
-    <nav z-10 className="bg-white border-gray-200 text-2xl dark:bg-gray-900">
+    <nav z-10 className="bg-white border-gray-200 md:text-2xl sm:text-xl dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="google.com">
           <h1 className="text-5xl p-3 text-white font-bold">RAHUL</h1>
