@@ -83,7 +83,7 @@ function Navbar({toggleNav}) {
               <a
               target='_blank' rel="noreferrer"
               // eslint-disable-next-line
-                href="https://drive.google.com/file/d/1duh01Yco9hFunzkmi_CK1uRBs7K3gqeE/view?usp=sharing"
+                href="https://drive.google.com/file/d/1lancusELmXX5dZJ9fMX3NpfXq2V4V8zC/view?usp=drivesdk"
                 className="block py-4 sm:border-zinc-100 sm:border-2  sm:mt-2 md:mt-0 pl-3 pr-4 md:mr-20 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 DS CODE pdf 
