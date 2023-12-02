@@ -2,9 +2,9 @@
 import './App.css';
 import Hero from './components/hero';
 import Navbar from './components/navbar';
-import Aboutme from './components/aboutme';
+
 import Contactme from './components/contactme';
-import Skills from './components/skills';
+
 // import Moth from './images/moth.svg';
 import React, { useState} from "react";
 
@@ -26,8 +26,8 @@ function App() {
       <Hero isNavOpen={isNavOpen} />
       
       <div><br/></div>
-      <Aboutme />
-      <Skills  />
+      {/* <Aboutme />
+      <Skills  /> */}
       <Contactme />
       {/* <Hero /> */}
       

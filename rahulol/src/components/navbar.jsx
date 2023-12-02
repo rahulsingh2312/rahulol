@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-
+import { Sling as Hamburger } from 'hamburger-react'
 function Navbar({toggleNav}) {
   const [isNavOpen, setIsNavOpen] = useState();
+  // const [isOpen, setOpen] = useState(false)
+
+
 
   const scrollToSection = (sectionId) => {
     console.log(`Scrolling to section: ${sectionId}`);
@@ -27,30 +30,15 @@ function Navbar({toggleNav}) {
         <a href="google.com">
           <h1 className="text-5xl p-3 text-white font-bold">RAHUL</h1>
         </a>
-        <button
-          onClick={handleToggleNav}
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded={isNavOpen}
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
+
+      
+        <Hamburger
+  toggled={isNavOpen}
+  toggle={handleToggleNav}
+  size={20}
+  duration={5.2} // Set the size according to your design
+  color={isNavOpen ? '#fff' : '#888'} // Set the color based on your design
+/>
         <div
           className={`${
             isNavOpen ? 'block' : 'hidden'
@@ -83,10 +71,10 @@ function Navbar({toggleNav}) {
               <a
               target='_blank' rel="noreferrer"
               // eslint-disable-next-line
-                href="https://drive.google.com/file/d/1lancusELmXX5dZJ9fMX3NpfXq2V4V8zC/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1DueqGPJejuIdH6ZJVHIjhiQLPbP-1We8/view?usp=sharing"
                 className="block py-4 sm:border-zinc-100 sm:border-2  sm:mt-2 md:mt-0 pl-3 pr-4 md:mr-20 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                DS CODE pdf 
+                Resume
               </a>
             </li>
             
