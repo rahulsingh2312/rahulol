@@ -4,6 +4,8 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    backgroundColor: {
+      twhek: '#F4EAE1',},
     screens: {
       'sm': '350px',
       // => @media (min-width: 576px) { ... }
