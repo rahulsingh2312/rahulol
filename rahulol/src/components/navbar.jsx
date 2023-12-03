@@ -71,7 +71,7 @@ function Navbar({toggleNav}) {
               <a
               target='_blank' rel="noreferrer"
               // eslint-disable-next-line
-                href="https://drive.google.com/file/d/1DueqGPJejuIdH6ZJVHIjhiQLPbP-1We8/view?usp=sharing"
+                href="https://www.overleaf.com/read/pyvzfpmqjhjw#fd7d00"
                 className="block py-4 sm:border-zinc-100 sm:border-2  sm:mt-2 md:mt-0 pl-3 pr-4 md:mr-20 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 dark:text-black dark:hover:bg-gray-700 dark:hover:text-grey md:dark:hover:bg-transparent"
               >
                 Resume
