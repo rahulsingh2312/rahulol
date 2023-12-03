@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import left from './images/mirrordesign.png'
-import right from './images/mirrrorlaptoponly.png'
+// import right from './images/mirrrorlaptoponly.png'
 const importAll = (context) => context.keys().map(context);
 const images = importAll(require.context('./slideshow/', false, /\.(png|jpe?g|svg)$/));
 
@@ -46,10 +46,10 @@ export default function Profile() {
  
     return (
       <div style={{ backgroundColor: "#F4EAE1" }}>
-        <div className='md:block sm:hidden'>
+        {/* <div className='md:block sm:hidden'>
           <img className='absolute  mt-80' src={left} width={550} alt="deg"></img>
           <img className=' float-right mt-40' src={right} width={550} alt="deg"></img>
-          </div>
+          </div> */}
           <img className='md:hidden' src={left} width={550} alt="deg"></img>
         <div className='flex justify-center pb-10 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', }} >Projects</div>
        <div className='md:ml-96  md:pl-60 md:mr-40 md:pr-96'>
