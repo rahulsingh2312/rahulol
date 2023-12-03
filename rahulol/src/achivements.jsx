@@ -3,9 +3,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import arctic from "./images/rahul.png"
 
-import taylor from "./images/rahul.png"
+const importAll = (context) => context.keys().map(context);
+const images = importAll(require.context('./slideshow/', false, /\.(png|jpe?g|svg)$/));
+
 
 export default function Profile() {
  
@@ -42,8 +43,10 @@ export default function Profile() {
     return (
       <div>
  <Slider {...sliderSettings}>
- {/* <img className="w-1/8 h-auto max-h-60" src={arctic} alt="arctic" /> */}
- {/* <img className="w-1/8 h-auto max-h-60" src={taylor} alt="taylor" /> */}
+ 
+ {images.map((image, index) => (
+          <img key={index} className="w-1/8 h-auto max-h-60" src={image} alt={`slide-${index}`} />
+        ))}
     {/* <img className="w-1/4 h-auto max-h-60 " src={justin} alt="justin" /> */}
           {/* <img className="w-1/8 h-auto max-h-60" src={olivia} alt="olivia" /> */}
           
