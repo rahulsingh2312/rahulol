@@ -68,17 +68,19 @@ function Contact() {
                 required
                 className='w-full p-2 border-b bg-gray-100 text-pink-300 border-pink-300 focus:outline-none focus:border-pink-500'
               ></textarea>
-            </div>
-
+      </div>
+<div className=''>
             <button
+             style={{ backgroundColor: 'rgb(249 168 212)'  }}
               type='submit'
-              className='w-full md:w-full md:mb-40 sm:mb-20 bg-pink-300 text-white font-bold py-2 px-4 hover:bg-pink-500 transition duration-300 ease-in-out'
+              className='w-full md:w-full z-10 border  md:mb-40 sm:mb-20  text-black font-bold py-2 px-4 hover:bg-pink-500 transition duration-300 ease-in-out'
             >
               Submit
-            </button>
+            </button>      
+</div>
           </form>
 
-          <div className=' text-pink-300 mb-10 text-center text-2xl mt-2'> made with {hi} by rahul </div>
+          <div className=' text-pink-300  mb-10 text-center text-2xl mt-2'> made with {hi} by rahul </div>
         </div>
       </div>
 

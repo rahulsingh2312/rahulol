@@ -1,6 +1,6 @@
 // import React from 'react';
 import './App.css';
-// import Hero from './components/hero';
+import Achivements from './achivements';
 import Navbar from './components/navbar';
 import Aboutme from './components/aboutme'
 import Contactme from './components/contactme';
@@ -43,6 +43,7 @@ function App() {
        <Aboutme />   
        {/* <Hero /> */}
       {/* <Skills  />  */}
+      <Achivements />
       <Contactme />
    
       
