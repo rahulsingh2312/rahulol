@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 /* eslint-disable-next-line */
-*{
+
   /* eslint-disable-next-line */
   ::-moz-selection { /* Code for Firefox */
     color: rgb(0, 0, 0);
@@ -13,7 +13,7 @@
     color: rgb(0, 0, 0);
     background: rgb(244, 165, 252);
   }
-}
+
 body {
   overflow-x: hidden;
   margin: 0;

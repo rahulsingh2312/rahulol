@@ -4,15 +4,6 @@ import Soundon from "../images/sound_on.png"
 import  { useState, useEffect } from 'react';
 
 
-
-
-
-
-
-
-
-
-
 function Aboutme(){
     const importAll = (context) => context.keys().map(context);
 

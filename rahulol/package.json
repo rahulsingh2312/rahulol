@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node-sass src/styles/main.scss -o dist/css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,7 +42,6 @@
     "@babel/core": "^7.22.11",
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-react": "^7.22.5",
-    "postcss-nesting": "^12.0.1",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.5"
   }
 }
