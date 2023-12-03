@@ -42,8 +42,8 @@ export default function Profile() {
     return (
       <div>
  <Slider {...sliderSettings}>
- <img className="w-1/8 h-auto max-h-60" src={arctic} alt="arctic" />
- <img className="w-1/8 h-auto max-h-60" src={taylor} alt="taylor" />
+ {/* <img className="w-1/8 h-auto max-h-60" src={arctic} alt="arctic" /> */}
+ {/* <img className="w-1/8 h-auto max-h-60" src={taylor} alt="taylor" /> */}
     {/* <img className="w-1/4 h-auto max-h-60 " src={justin} alt="justin" /> */}
           {/* <img className="w-1/8 h-auto max-h-60" src={olivia} alt="olivia" /> */}
           
