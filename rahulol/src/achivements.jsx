@@ -3,7 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-
+import left from './images/mirrordesign.png'
+import right from './images/mirrrorlaptoponly.png'
 const importAll = (context) => context.keys().map(context);
 const images = importAll(require.context('./slideshow/', false, /\.(png|jpe?g|svg)$/));
 
@@ -14,19 +15,20 @@ export default function Profile() {
     <div
       {...props}
       className="slick-arrow"
-      style={{ right: '10px', zIndex: 1  , display:'flex', float:'right',  }}
-    >
-      <FaArrowRight size={30} color="##F4EAE1" />
+      style={{ zIndex: 1, transform: 'translateX(92%)' }}
+   >
+      <FaArrowRight size={30} color="rgb(249 168 212)" />
     </div>
   );
 
   const CustomPrevArrow = (props) => (
     <div
+
       {...props}
-      className="slick-arrow"
-      style={{ left: '10px', zIndex: 1 }}
-    >
-      <FaArrowLeft size={30} color="#F4EAE1" />
+      className="slick-arrow absolute my-96"
+      style={{}}
+      >
+      <FaArrowLeft size={30} color="rgb(249 168 212)" />
     </div>
   ); 
   const sliderSettings = {
@@ -37,22 +39,31 @@ export default function Profile() {
     slidesToScroll: 1,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
+    autoplay: true,           // Enable autoplay
+    autoplaySpeed: 1500, 
   };
 
  
     return (
-      <div>
- <Slider {...sliderSettings}>
+      <div style={{ backgroundColor: "#F4EAE1" }}>
+        <div className='md:block sm:hidden'>
+          <img className='absolute  mt-80' src={left} width={550} alt="deg"></img>
+          <img className=' float-right mt-40' src={right} width={550} alt="deg"></img>
+          </div>
+          <img className='md:hidden' src={left} width={550} alt="deg"></img>
+        <div className='flex justify-center pb-10 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', }} >Projects</div>
+       <div className='md:ml-96  md:pl-60 md:mr-40 md:pr-96'>
+      
+ <Slider  {...sliderSettings}>
  
  {images.map((image, index) => (
-          <img key={index} className="w-1/8 h-auto max-h-60" src={image} alt={`slide-${index}`} />
+          <img key={index} className=" w-full max-h-96  md:max-w-2xl" src={image} alt={`slide-${index}`} />
         ))}
-    {/* <img className="w-1/4 h-auto max-h-60 " src={justin} alt="justin" /> */}
-          {/* <img className="w-1/8 h-auto max-h-60" src={olivia} alt="olivia" /> */}
-          
-          
-          
+            
         </Slider>
+     
+        </div> 
+      
       </div>
       
       

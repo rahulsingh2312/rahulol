@@ -23,8 +23,8 @@ function Contact() {
   };
 
   return (
-    <div id='getintouch' className='pirateone'>
-      <div className='md:flex sm:mt-40'>
+    <div id='getintouch' className='pirateone' style={{ backgroundColor: "#F4EAE1" }}>
+      <div className='md:flex sm:pt-40'>
         <div className='md:w-1/2 md:ml-80 text-6xl md:text-8xl p-10 text-pink-300 font-bold'>
           Get In Touch!
           <br />
@@ -80,7 +80,7 @@ function Contact() {
 </div>
           </form>
 
-          <div className=' text-pink-300  mb-10 text-center text-2xl mt-2'> made with {hi} by rahul </div>
+          <div className=' text-pink-300  pb-10 text-center text-2xl mt-2'> made with {hi} by rahul </div>
         </div>
       </div>
 
