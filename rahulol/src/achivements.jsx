@@ -23,19 +23,19 @@ export default function Profile() {
           <section className=" wrapper-projects">
         <div className="paddings  innerWidth p-container ">
         
-        <div className='flex justify-center pb-10 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', }} >Projects</div>
+        <div className='flex justify-center pb-20 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', }} >Projects</div>
        <div className='md:ml-40 ml-20'>
       
  <Swiper breakpoints={{0:{slidesPerView:1, spaceBetween:40},480:{slidesPerView:1, spaceBetween:40},720:{slidesPerView:2, spaceBetween:40},1280:{slidesPerView:3,spaceBetween:50}}}>
           <SlideButtons/>
             {
                 data.map((card, i) => (
-                  <SwiperSlide key={i}>
+                  <SwiperSlide key={i+1}>
                     <div  style={{    /* fallback for old browsers */
   background: 'linear-gradient(to right, #d9a7c7, #fffcdc)',}}  className="flexCenter flexColStart p-card">
                       <img src={card.image} alt="Thumb"/>
                       <span className="p-cardtext"><br/>
-                        <span className="primaryText name">{card.name}</span><br/>
+                        <span className="primaryText name z-10" >{card.name}</span><br/>
                         <span className="secondaryText detail">{card.detail}</span><br/>
                         <a className="" style={{color:"blue"}} href={card.link1}>
                         <button className="button2">{card['button-name']}</button></a>
