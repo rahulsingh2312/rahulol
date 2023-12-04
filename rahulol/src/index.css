@@ -14,6 +14,9 @@
     background: rgb(244, 165, 252);
   }
 
+  *{
+    background-color:#F4EAE1 ;
+  }
 body {
   overflow-x: hidden;
   margin: 0;
