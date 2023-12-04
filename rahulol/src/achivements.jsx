@@ -19,8 +19,12 @@ export default function Profile() {
             <img className=' float-right -mt-40' src={right} width={550} alt="deg"></img>
             </div>
           <img className='md:hidden' src={left} width={550} alt="deg"></img>
+
+          <section className=" wrapper-projects">
+        <div className="paddings  innerWidth p-container ">
+        
         <div className='flex justify-center pb-10 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', }} >Projects</div>
-       <div className=''>
+       <div className='md:ml-40 ml-20'>
       
  <Swiper breakpoints={{0:{slidesPerView:1, spaceBetween:40},480:{slidesPerView:1, spaceBetween:40},720:{slidesPerView:2, spaceBetween:40},1280:{slidesPerView:3,spaceBetween:50}}}>
           <SlideButtons/>
@@ -52,6 +56,8 @@ export default function Profile() {
         </Swiper>
      
         </div> 
+        </div>
+      </section>
       
       </div>
       
