@@ -30,7 +30,7 @@ export default function Profile() {
           <SlideButtons/>
             {
                 data.map((card, i) => (
-                  <SwiperSlide key={i+1}>
+                  <SwiperSlide key={i}>
                     <div  style={{    /* fallback for old browsers */
   background: 'linear-gradient(to right, #d9a7c7, #fffcdc)',}}  className="flexCenter flexColStart p-card">
                       <img src={card.image} alt="Thumb"/>
