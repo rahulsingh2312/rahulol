@@ -20,7 +20,7 @@ export default function Profile() {
             </div>
           <img className='md:hidden' src={left} width={550} alt="deg"></img>
         <div className='flex justify-center pb-10 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', }} >Projects</div>
-       <div className='md:ml-96  md:pl-60 md:mr-40 md:pr-96'>
+       <div className=''>
       
  <Swiper breakpoints={{0:{slidesPerView:1, spaceBetween:40},480:{slidesPerView:1, spaceBetween:40},720:{slidesPerView:2, spaceBetween:40},1280:{slidesPerView:3,spaceBetween:50}}}>
           <SlideButtons/>
