@@ -13,7 +13,7 @@ export default function Profile() {
  
  
     return (
-      <div style={{ backgroundColor: "#F4EAE1", fontFamily:"Inknut Antiqua" }}>
+      <div  id="skills" style={{ backgroundColor: "#F4EAE1", fontFamily:"Inknut Antiqua" }}>
           <div className='md:block sm:hidden'>
             <img className='absolute  -mt-40' src={left} width={550} alt="deg"></img>
             <img className=' float-right -mt-40' src={right} width={550} alt="deg"></img>
