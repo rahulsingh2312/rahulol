@@ -2,7 +2,7 @@
   "name": "rahulol",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://rahulol.me/",
+  "homepage": "https://rahulol.me/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.17.0",
