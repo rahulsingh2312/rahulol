@@ -5,21 +5,20 @@
       "detail": "Confidential (Under Nda) ",
       "image": "./fin.png"
     },
-    
-    {
-      "name": "musix taste anal-yser",
-      "detail": "spotify api , reddit data , ai",
-      "image": "./MacBook Pro 14_ - 4.png",
-      "button-name": "Visit",
-      "link1": "https://music-taste-analyzer.netlify.app/"
-    
-    },
     {
       "name": "Random song",
       "detail": "Showcasing youtube , spotify api ",
       "image": "./rndson.png",
       "link1": "https://main--random-song-swiftie.netlify.app/",
       "button-name": "Visit"
+    },
+{
+      "name": "musix taste anal-yser",
+      "detail": "spotify api , reddit data , ai",
+      "image": "./MacBook Pro 14_ - 4.png",
+      "button-name": "Visit",
+      "link1": "https://music-taste-analyzer.netlify.app/"
+    
     },
     {
       "name": "Tedx website",
