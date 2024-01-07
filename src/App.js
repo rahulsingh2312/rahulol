@@ -4,7 +4,7 @@ import Achivements from './achivements';
 import Navbar from './components/navbar';
 import Aboutme from './components/aboutme'
 import Contactme from './components/contactme';
-
+import Experience from './components/Experience';
 // import Moth from './images/moth.svg';
 import React, { useState , useEffect } from "react";
 import LoadingScreen from './loadingscreen';
@@ -45,6 +45,7 @@ function App() {
       {/* <Skills  />  */}
       <Achivements />
       <Contactme />
+      <Experience />
    
       
       {/* <div className="mt-40 float-right"><img alt="moth" src={Moth} /></div> */}
