@@ -27,7 +27,7 @@ function Navbar({toggleNav}) {
   return (
     <nav style={{backgroundColor:"#F4EAE1"}} className="bg-white border-gray-200 md:text-2xl sm:text-xl dark:bg-white-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="google.com">
+        <a href="/">
           <h1 className="text-5xl p-3 text-black font-bold">RAHUL</h1>
         </a>
 
