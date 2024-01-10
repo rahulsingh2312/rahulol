@@ -12,6 +12,7 @@ const images = importAll(require.context('../slideshow', false, /\.(png|jpe?g|sv
 const swiperContainerStyle = {
   display: 'flex',
   alignItems: 'center',
+  overflow: 'hidden',
   justifyContent: 'center',
   height: '400px', // Adjust this to set the height of the Swiper container
 };
