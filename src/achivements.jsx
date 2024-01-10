@@ -13,17 +13,20 @@ export default function Profile() {
  
  
     return (
+      
       <div  id="skills" style={{ backgroundColor: "#F4EAE1", fontFamily:"Inknut Antiqua" }}>
+       <div className="" style={{filter: 'blur(0.7px)'}}>
           <div className='md:block sm:hidden'>
             <img className='absolute  -mt-40' src={left} width={550} alt="deg"></img>
             <img className=' float-right -mt-40' src={right} width={550} alt="deg"></img>
-            </div>
+          
           <img className='md:hidden' src={left} width={550} alt="deg"></img>
-
+          </div>
+          </div>
           <section className=" wrapper-projects">
         <div className="paddings  innerWidth p-container ">
-        
-        <div className='flex justify-center pb-20 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', }} >Projects</div>
+        <div className="" style={{filter: 'blur(0.7px)'}}>
+        <div className='flex justify-center pb-20 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', }} >Projects</div></div>
        <div className='md:ml-40 ml-20'>
       
  <Swiper breakpoints={{0:{slidesPerView:1, spaceBetween:40},480:{slidesPerView:1, spaceBetween:40},720:{slidesPerView:2, spaceBetween:40},1280:{slidesPerView:3,spaceBetween:50}}}>
@@ -62,7 +65,7 @@ export default function Profile() {
       </div>
       
       
-      
+   
       
     )
   }

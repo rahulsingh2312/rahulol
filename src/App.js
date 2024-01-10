@@ -44,8 +44,9 @@ function App() {
        {/* <Hero /> */}
       {/* <Skills  />  */}
       <Achivements />
-      <Contactme />
       <Experience />
+      <Contactme />
+    
    
       
       {/* <div className="mt-40 float-right"><img alt="moth" src={Moth} /></div> */}

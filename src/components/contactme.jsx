@@ -23,6 +23,7 @@ function Contact() {
   };
 
   return (
+    <div className="" style={{filter: 'blur(0.5px)'}}>
     <div id='getintouch' className='pirateone' style={{ backgroundColor: "#F4EAE1" }}>
       <div className='md:flex sm:pt-40'>
         <div className='md:w-1/2 md:ml-80 text-6xl md:text-8xl p-10 text-pink-300 font-bold'>
@@ -84,6 +85,7 @@ function Contact() {
         </div>
       </div>
 
+    </div>
     </div>
   );
 }

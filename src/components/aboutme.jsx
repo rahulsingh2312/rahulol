@@ -62,7 +62,7 @@ function AboutMe() {
   }, [audio]);
 
   return (
-    <div onClick={handleClick} className='h-screen -mt-12   text-black-100' style={{ backgroundColor: "#F4EAE1" }}>
+    <div onClick={handleClick} className='h-screen -mt-12   text-black-100' style={{ backgroundColor: "#F4EAE1" ,filter: 'blur(1px)' }}>
       <div className='absolute ' style={{ zIndex: -1 }}> <img src={Noise} style={{ width: '100vw', height: '100vh', animation: 'slideRight 8s linear infinite' }} alt='nos' /> </div>
       {/* <div style={{ width: '20%', height: '20%', position: 'absolute', left: '0', background: `linear-gradient(90deg, ${gradientColors[0][0]} 100%, ${gradientColors[0][1]} 100%)`, borderRadius: 400, filter: 'blur(40px)', animation: 'slideRight 4s linear infinite' }} /> */}
       {/* <div style={{ width: '20%', height: '20%', position: 'absolute', right: '50%', background: `linear-gradient(90deg, ${gradientColors[1][0]} 100%, ${gradientColors[1][1]} 100%)`, borderRadius: 400, filter: 'blur(40px)', animation: 'slideLeft 3s linear infinite' }} /> */}
