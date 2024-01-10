@@ -19,6 +19,7 @@ const swiperContainerStyle = {
 
 const swiperStyles = `
   .swiper {
+    overflow: 'hidden',
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -58,7 +59,7 @@ const swiperStyles = `
 export default function App() {
   return (
    <>
-    <div className="" style={{filter: 'blur(1px)'}}>
+    <div className="" style={{filter: 'blur(1px)' ,  overflow: 'hidden'}}>
       <div className='flex justify-center md:my-20   mt-40 pb-0 md:pt-40 md:text-5xl text-4xl' style={{   zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontFamily: 'Inknut Antiqua' }}>Livin Tech :3</div>
       </div>
       <div style={swiperContainerStyle}>

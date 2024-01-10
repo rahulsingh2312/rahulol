@@ -32,7 +32,7 @@ function App() {
  
 
   return isLoaded ? (
-    <div>
+    <div style={{  overflowX: 'hidden'}}> 
       
       <Navbar toggleNav={toggleNav} />
       <div><br/></div>
