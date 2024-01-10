@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f3f3fbc.css",
-    "main.js": "/static/js/main.af24f9dc.js",
+    "main.css": "/static/css/main.e87b54a3.css",
+    "main.js": "/static/js/main.6130936a.js",
     "static/js/787.db96b784.chunk.js": "/static/js/787.db96b784.chunk.js",
     "static/media/ezgif.com-gif-maker-2.webp": "/static/media/ezgif.com-gif-maker-2.493c5aa9f3466c35e1d5.webp",
     "static/media/mobilematrix.webp": "/static/media/mobilematrix.5fff013593f51b37783b.webp",
@@ -24,12 +24,12 @@
     "static/media/a (online-video-cutter.com).mp4": "/static/media/a (online-video-cutter.com).4160cd3c711b9109516a.mp4",
     "static/media/w (online-video-cutter.com).mp4": "/static/media/w (online-video-cutter.com).7905c9545bbb875adf4a.mp4",
     "index.html": "/index.html",
-    "main.4f3f3fbc.css.map": "/static/css/main.4f3f3fbc.css.map",
-    "main.af24f9dc.js.map": "/static/js/main.af24f9dc.js.map",
+    "main.e87b54a3.css.map": "/static/css/main.e87b54a3.css.map",
+    "main.6130936a.js.map": "/static/js/main.6130936a.js.map",
     "787.db96b784.chunk.js.map": "/static/js/787.db96b784.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f3f3fbc.css",
-    "static/js/main.af24f9dc.js"
+    "static/css/main.e87b54a3.css",
+    "static/js/main.6130936a.js"
   ]
 }
