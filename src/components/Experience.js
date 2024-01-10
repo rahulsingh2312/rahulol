@@ -60,7 +60,7 @@ export default function App() {
   return (
    <>
     <div className="" style={{filter: 'blur(1px)' ,  overflow: 'hidden'}}>
-      <div className='flex justify-center md:my-20   mt-40 mb-20 md:mb-0 pb-0 md:pt-40 md:text-5xl text-4xl' style={{   zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontFamily: 'Inknut Antiqua' }}>Livin Tech :3</div>
+      <div className='flex justify-center md:my-20   mt-40 mb-10 md:mb-0 pb-0 md:pt-40 md:text-5xl text-4xl' style={{   zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontFamily: 'Inknut Antiqua' }}>Livin Tech :3</div>
       </div>
       <div style={swiperContainerStyle}>
       <style>{swiperStyles}</style>
