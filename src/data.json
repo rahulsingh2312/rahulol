@@ -10,21 +10,21 @@
     {
       "name": "Fintech app",
       "detail": "Confidential (Under Nda) ",
-      "image": "./fin.png",
+      "image": "./fin.webp",
       "link1": "https://bullsshire.vercel.app",
       "button-name": "Visit"
     },
     {
       "name": "Random song",
       "detail": "Showcasing youtube , spotify api ",
-      "image": "./rndson.png",
+      "image": "./rndson.webp",
       "link1": "https://main--random-song-swiftie.netlify.app/",
       "button-name": "Visit"
     },
 {
       "name": "musix taste anal-yser",
       "detail": "spotify api , reddit data , ai",
-      "image": "./MacBook Pro 14_ - 4.png",
+      "image": "./MacBook Pro 14_ - 4.webp",
       "button-name": "Visit",
       "link1": "https://music-taste-analyzer.netlify.app/"
     
@@ -32,7 +32,7 @@
     {
       "name": "Tedx website",
       "detail": "Tcet's tedx website",
-      "image": "./tedx.png",
+      "image": "./tedx.webp",
       "link1": "https://www.tedxtcet.com/",
       "button-name": "Visit"
       
@@ -40,7 +40,7 @@
     {
       "name": "Figma artist",
       "detail": "hard figma skills",
-      "image": "./Screenshot_20231127_180424.png",
+      "image": "./Screenshot_20231127_180424.webp",
       "link1": "https://www.figma.com/proto/V4pPL77ZwmtynMzBbgt5ox/Untitled?type=design&node-id=37-2&t=HgIdD7bFlolK2ciz-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=37%3A2&show-proto-sidebar=1",
     
       "button-name": "Visit"
@@ -49,7 +49,7 @@
     {
       "name": "Furguardian",
       "detail": "an app to help all your furry friends",
-      "image": "./Screenshot_20231203_142002.png",
+      "image": "./Screenshot_20231203_142002.webp",
       "button-name": "Code",
       "link1": "    "
    
@@ -57,7 +57,7 @@
     {
       "name": "snake game",
       "detail": "lol reminds me of my ex ",
-      "image": "./MacBook Pro 14_ - 1.png",
+      "image": "./MacBook Pro 14_ - 1.webp",
       "button-name": "Visit",
       "link1": "https://rahulsingh2312.github.io/gamewhichremindsmeofher/"
    
@@ -65,7 +65,7 @@
     {
         "name": "connect 4 python ",
         "detail": "pygame ",
-        "image": "./MacBook Pro 14_ - 2(1).png",
+        "image": "./MacBook Pro 14_ - 2(1).webp",
         "button-name": "Code",
         "link1": "https://github.com/rahulsingh2312/connect4/"
      
@@ -73,7 +73,7 @@
       {
         "name": "Todolist ",
         "detail": "but on flask and mongodb  ",
-        "image": "./246606065-888531d9-c3ba-4bba-9234-055e8889e25b.png",
+        "image": "./246606065-888531d9-c3ba-4bba-9234-055e8889e25b.webp",
         "button-name": "Code",
         "link1": "https://github.com/rahulsingh2312/todolist/"
      

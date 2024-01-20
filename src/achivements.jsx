@@ -4,8 +4,8 @@ import "swiper/css"
 import './Project.css'
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 import data from './data.json'
-import left from './images/mirrordesign.png'
-import right from './images/mirrrorlaptoponly.png'
+import left from './images/mirrordesign.webp'
+import right from './images/mirrrorlaptoponly.webp'
 // const importAll = (context) => context.keys().map(context);
 // const images = importAll(require.context('./slideshow/', false, /\.(png|jpe?g|svg)$/));
 

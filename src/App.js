@@ -17,7 +17,7 @@ const App = () => {
   };
 
   const handleLoadingScreenClick = () => {
-    console.log("Loading screen clicked");
+  
 
     const audio = new Audio(audioFile);
     audio.play()

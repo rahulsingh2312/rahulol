@@ -7,7 +7,7 @@ import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 // Function to import all images from the "slideshow" folder
 const importAll = (context) => context.keys().map(context);
-const images = importAll(require.context('../slideshow', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../slideshow', false, /\.(png|webp|jpe?g|svg)$/));
 
 const swiperContainerStyle = {
   display: 'flex',

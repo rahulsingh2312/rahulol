@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useGlitch } from 'react-powerglitch';
-import Noise from "../images/NoiseRectangle.png";
-import Soundon from "../images/sound_on.png";
+import Noise from "../images/NoiseRectangle.webp";
+import Soundon from "../images/sound_on.webp";
 
 function AboutMe() {
   const importAll = (context) => context.keys().map(context);
