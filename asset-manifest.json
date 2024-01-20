@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.e87b54a3.css",
-    "main.js": "/static/js/main.6130936a.js",
+    "main.css": "/static/css/main.5e92a518.css",
+    "main.js": "/static/js/main.7edb31bb.js",
     "static/js/787.db96b784.chunk.js": "/static/js/787.db96b784.chunk.js",
-    "static/media/ezgif.com-gif-maker-2.webp": "/static/media/ezgif.com-gif-maker-2.493c5aa9f3466c35e1d5.webp",
-    "static/media/mobilematrix.webp": "/static/media/mobilematrix.5fff013593f51b37783b.webp",
+    "static/media/WLC-unscreen.gif": "/static/media/WLC-unscreen.2ed32639aca1d12664b6.gif",
     "static/media/23.png": "/static/media/23.d0eda6973341322c7108.png",
     "static/media/Screenshot_20240111_010747.png": "/static/media/Screenshot_20240111_010747.2a817fc78394996b04fb.png",
     "static/media/mirrordesign.png": "/static/media/mirrordesign.b0f5883b5973d31cafcf.png",
-    "static/media/La La La - Sath Nibhana Sathiya Serial BGM.mp4": "/static/media/La La La - Sath Nibhana Sathiya Serial BGM.064691ee56c3f7781fe7.mp4",
-    "static/media/g.mp4": "/static/media/g.dd47abb8e4fe34f4ea53.mp4",
+    "static/media/arges-variable-wght-wdth-slnt.ttf": "/static/media/arges-variable-wght-wdth-slnt.9b34faf672813b0ba86b.ttf",
     "static/media/mirrrorlaptoponly.png": "/static/media/mirrrorlaptoponly.59233ce82deb7630b2bb.png",
     "static/media/NoiseRectangle.png": "/static/media/NoiseRectangle.8185555658679151d70d.png",
     "static/media/411442396_317838160578746__n.jpg": "/static/media/411442396_317838160578746_7711972321725408017_n.9797ca912ddb1bb60a10.jpg",
     "static/media/22.jpg": "/static/media/22.d03c79e4407fc470a089.jpg",
     "static/media/1.jpg": "/static/media/1.7505cafdc734a50762a5.jpg",
+    "static/media/vcr.ttf": "/static/media/vcr.10cf96d54dcd9af0486c.ttf",
+    "static/media/PPMori-Extralight.otf": "/static/media/PPMori-Extralight.78d084cbf7ae991057eb.otf",
     "static/media/411039361___n.jpg": "/static/media/411039361_1600329617171804_7900755344541602284_n.47e433bd28f1de8db3ab.jpg",
     "static/media/21.jpg": "/static/media/21.ed3dcecdb2758958cd7f.jpg",
     "static/media/20.jpg": "/static/media/20.1228fc11110ed6aa029b.jpg",
@@ -22,14 +22,15 @@
     "static/media/k (online-video-cutter.com).mp4": "/static/media/k (online-video-cutter.com).8f1bb20cc6d4fb3c4dd8.mp4",
     "static/media/m (online-video-cutter.com).mp4": "/static/media/m (online-video-cutter.com).ff44b8f42e0fadf10838.mp4",
     "static/media/a (online-video-cutter.com).mp4": "/static/media/a (online-video-cutter.com).4160cd3c711b9109516a.mp4",
+    "static/media/glitch1.mp3": "/static/media/glitch1.f9490d41c8a6f8b03175.mp3",
     "static/media/w (online-video-cutter.com).mp4": "/static/media/w (online-video-cutter.com).7905c9545bbb875adf4a.mp4",
     "index.html": "/index.html",
-    "main.e87b54a3.css.map": "/static/css/main.e87b54a3.css.map",
-    "main.6130936a.js.map": "/static/js/main.6130936a.js.map",
+    "main.5e92a518.css.map": "/static/css/main.5e92a518.css.map",
+    "main.7edb31bb.js.map": "/static/js/main.7edb31bb.js.map",
     "787.db96b784.chunk.js.map": "/static/js/787.db96b784.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e87b54a3.css",
-    "static/js/main.6130936a.js"
+    "static/css/main.5e92a518.css",
+    "static/js/main.7edb31bb.js"
   ]
 }
