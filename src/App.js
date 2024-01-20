@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState} from "react";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";  // Updated import statement
 import './App.css';
 import Achievements from './achivements';
 import Navbar from './components/navbar';
@@ -9,7 +9,7 @@ import LivingTech from './components/LivingTech';
 import LoadingScreen from './loadingscreen';
 import audioFile from './audio/glitch1.mp3';
 
-function App() {
+const App = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -24,6 +24,8 @@ function App() {
       .then(() => console.log("Audio played successfully"))
       .catch(error => console.error("Error playing audio:", error));
   };
+
+  
 
   return (
     <Router>
