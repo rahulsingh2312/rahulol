@@ -1,9 +1,18 @@
 [
   
+  {
+    "name": "GlowUP Essentials",
+    "detail": " APP for ur skincare and reports ",
+    "image": "https://framerusercontent.com/images/m7RlB3nTZHnVAIpzfTXKLphgDcA.png",
+    "link1": "https://glowup.framer.ai",
+    "button-name": "Visit"
+  },
     {
       "name": "Fintech app",
       "detail": "Confidential (Under Nda) ",
-      "image": "./fin.png"
+      "image": "./fin.png",
+      "link1": "https://bullsshire.vercel.app",
+      "button-name": "Visit"
     },
     {
       "name": "Random song",

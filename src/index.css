@@ -13,15 +13,39 @@
     color: rgb(0, 0, 0);
     background: rgb(244, 165, 252);
   }
+  @font-face {
+    font-family: "Arges";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../public/arges-variable-wght-wdth-slnt.ttf) format("truetype");
 
+  }
+  @font-face {
+    font-family: "VCR";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../public/vcr.ttf) format("truetype");
+.Lora{
+    font-family: 'Lora';
+  }
+  @font-face {
+    font-family: "PP";
+    /* font-style: normal; */
+    /* font-weight: 00; */
+    src: url(../public/PPMori-Extralight.otf) format("truetype");
+
+  }
   html{
     background-color:#F4EAE1 ;
+  }
+  .PP{
+    font-family: 'PP';
   }
 body {
   overflow-x: hidden;
   margin: 0;
   background-color: "#F4EAE1" ;
-  font-family:'Rubik Iso';
+  font-family:'PP';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +58,7 @@ body {
 .pirateone{
   font-family: 'Pirate one';
 }
-code {
+.code {
   font-family: 'Rubik Mono One';
 }
 
@@ -84,4 +108,4 @@ code {
 
 .innerWidth {
   width: 100%;
-}
+}}

@@ -23,6 +23,23 @@
 }
 
 
+.click-effect {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  animation: clickAnimation 0.5s ease-out forwards;
+}
+
+@keyframes clickAnimation {
+  to {
+    width: 2000px;
+    height: 2000px;
+    opacity: 0;
+  }
+}
+
 .hover-text {
   position: absolute;
   /* z-index: 100; */

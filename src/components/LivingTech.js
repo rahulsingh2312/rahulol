@@ -11,6 +11,7 @@ const images = importAll(require.context('../slideshow', false, /\.(png|jpe?g|sv
 
 const swiperContainerStyle = {
   display: 'flex',
+  backgroundColor: '#F4EAE1',
   alignItems: 'center',
   overflow: 'hidden',
   justifyContent: 'center',
@@ -59,7 +60,7 @@ const swiperStyles = `
 export default function App() {
   return (
    <>
-    <div className="" style={{filter: 'blur(1px)' ,  overflow: 'hidden'}}>
+    <div className="" style={{filter: 'blur(1px)' , backgroundColor: "#F4EAE1", overflow: 'hidden'}}>
       <div className='flex justify-center md:my-20   mt-40 mb-10 md:mb-0 pb-0 md:pt-40 md:text-5xl text-4xl' style={{   zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontFamily: 'Inknut Antiqua' }}>Livin Tech :3</div>
       </div>
       <div style={swiperContainerStyle}>

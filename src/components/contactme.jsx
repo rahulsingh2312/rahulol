@@ -1,11 +1,17 @@
 import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
 import '../App.css';
+import { useGlitch } from 'react-powerglitch';
+import Cat from '../images/WLC-unscreen.gif';
 let hi ="<3"
 
 function Contact() {
   const form = useRef(null);
-
+  const glitch = useGlitch({
+    "pulse": {
+      "scale": 2
+    }
+  });
   const sendEmail = (e) => {
     e.preventDefault();
     const currentForm = form.current;
@@ -25,16 +31,18 @@ function Contact() {
   return (
     <div className="" style={{filter: 'blur(0.5px)'}}>
     <div id='getintouch' className='pirateone' style={{ backgroundColor: "#F4EAE1" }}>
-      <div className='md:flex sm:pt-40'>
-        <div className='md:w-1/2 md:ml-80 text-6xl md:text-8xl p-10 text-pink-300 font-bold'>
+      <div className='md:flex sm:pt-20'>
+        <div className='md:w-1/2'>
+      <img ref={glitch.ref} src={Cat} alt="catglitch" className='md:w-full'  /></div>
+        <div className='md:w-1/2 text-6xl md:pt-40 md:text-8xl p-10 text-pink-300 font-bold'>
           Get In Touch!
           <br />
           <div className='text-sm md:text-4xl mt-2'>
             Currently Searching for Internship & Job opportunities
           </div>
         </div>
-        <div className='md:w-1/2 mt-6 md:mr-40 text-4xl sm:ml-10 sm:mr-10 sm:mt-0'>
-          <form className='text-center'  ref={form} onSubmit={sendEmail}>
+        <div className='md:w-1/2 mt-6 md:mr-40   text-4xl sm:ml-10 sm:mr-10 sm:mt-0'>
+          <form className='text-center md:pt-20'   ref={form} onSubmit={sendEmail}>
             <div className='mb-4'>
               <input
                 type='text'
@@ -74,7 +82,7 @@ function Contact() {
             <button
              style={{ backgroundColor: 'rgb(249 168 212)'  }}
               type='submit'
-              className='w-full md:w-full z-10 border  md:mb-40 sm:mb-20  text-black font-bold py-2 px-4 hover:bg-pink-500 transition duration-300 ease-in-out'
+              className='w-full md:w-full z-10 border  md:mb-20 sm:mb-10  text-black font-bold py-2 px-4 hover:bg-pink-500 transition duration-300 ease-in-out'
             >
               Submit
             </button>      
@@ -86,6 +94,7 @@ function Contact() {
       </div>
 
     </div>
+    
     </div>
   );
 }

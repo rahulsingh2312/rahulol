@@ -1,58 +1,52 @@
-// import React from 'react';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import Achivements from './achivements';
+import Achievements from './achivements';
 import Navbar from './components/navbar';
-import Aboutme from './components/aboutme'
+import Aboutme from './components/aboutme';
 import Contactme from './components/contactme';
-import Experience from './components/Experience';
-// import Moth from './images/moth.svg';
-import React, { useState , useEffect } from "react";
+import LivingTech from './components/LivingTech';
 import LoadingScreen from './loadingscreen';
-
-
-
- // Make sure the video path is correct
-// import Crystal from './images/crystal.svg';
+import audioFile from './audio/glitch1.mp3';
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
-  useEffect(() => {
-    // Simulate loading by setting a timeout
-    const timeout = setTimeout(() => {
-      setIsLoaded(true);
-    }, 2000); // 3000 milliseconds (3 seconds) - adjust as needed
 
-    return () => clearTimeout(timeout);
-  }, []);
+  const handleLoadingScreenClick = () => {
+    console.log("Loading screen clicked");
 
- 
+    const audio = new Audio(audioFile);
+    audio.play()
+      .then(() => console.log("Audio played successfully"))
+      .catch(error => console.error("Error playing audio:", error));
+  };
 
-  return isLoaded ? (
-    <div style={{  overflowX: 'hidden'}}> 
-      
-      <Navbar toggleNav={toggleNav} />
-      <div><br/></div>
-      
-      {/* <Hero isNavOpen={isNavOpen} /> */}
-      
-      <div><br/></div>
-       <Aboutme />   
-       {/* <Hero /> */}
-      {/* <Skills  />  */}
-      <Achivements />
-      <Experience />
-      <Contactme />
-    
-   
-      
-      {/* <div className="mt-40 float-right"><img alt="moth" src={Moth} /></div> */}
-    </div>
-  ) : (
-    <LoadingScreen />
+  return (
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={<LoadingScreen onClick={handleLoadingScreenClick} />}
+        />
+        <Route
+          path="/home"
+          element={
+            <div style={{ overflowX: 'hidden' }}>
+              <Navbar toggleNav={toggleNav} />
+              <div><br /></div>
+              <Aboutme />
+              <Achievements />
+              <LivingTech />
+              <Contactme />
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
