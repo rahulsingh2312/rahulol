@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  createRoutesFromElements,
-} from "react-router-dom";
+import { HashRouter ,Routes, Route   } from "react-router-dom";
 import './App.css';
 import Home from './home';
 // import ErrorPage from "./error-page";
@@ -37,20 +32,25 @@ const App = () => {
   //   element: <Home />,
   // },
 
-  const router = createBrowserRouter(createRoutesFromElements(
-    <Route>
-      <Route index element={<LoadingScreen onClick={handleLoadingScreenClick} /> } />
-      <Route path="home" element={<Home />} />
+  // const router = createBrowserRouter(createRoutesFromElements(
+  //   <Route>
+     
+  //     <Route path="home" element={<Home />} />
 
-      {/* <Route path="*" element={<ErrorPage />} /> */}
+  //     {/* <Route path="*" element={<ErrorPage />} /> */}
       
-    </Route>
-  ));
+  //   </Route>
+  // ));
   
   
 
   return (
-    <RouterProvider router={router} />
+    <HashRouter>
+    <Routes>
+    <Route index element={<LoadingScreen onClick={handleLoadingScreenClick} /> } />
+    <Route path="home" element={<Home />} />
+      </Routes>
+  </HashRouter>
   );
 }
 
