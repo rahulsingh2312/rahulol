@@ -2,15 +2,22 @@ import React from "react";
 import {
   createBrowserRouter,
   RouterProvider,
+  Route,
+  createRoutesFromElements,
 } from "react-router-dom";
 import './App.css';
 import Home from './home';
-import ErrorPage from "./error-page";
+// import ErrorPage from "./error-page";
 import LoadingScreen from './loadingscreen';
 import audioFile from './audio/glitch1.mp3';
 
 const App = () => {
+  function logLocationOnReload() {
+    console.log("Page reloaded. Current location:", window.location.href);
+  }
 
+  // Attach the function to the 'beforeunload' event
+  window.addEventListener('beforeunload', logLocationOnReload);
   const handleLoadingScreenClick = () => {
   
 
@@ -20,17 +27,25 @@ const App = () => {
       .catch(error => console.error("Error playing audio:", error));
   };
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <LoadingScreen onClick={handleLoadingScreenClick} />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/home",
-      element: <Home />,
-    },
-  ]);
+  // {
+  //   path: "/",
+  //   element: <LoadingScreen onClick={handleLoadingScreenClick} />,
+  //   errorElement: <ErrorPage />,
+  // },
+  // {
+  //   path: "/home",
+  //   element: <Home />,
+  // },
+
+  const router = createBrowserRouter(createRoutesFromElements(
+    <Route>
+      <Route index element={<LoadingScreen onClick={handleLoadingScreenClick} /> } />
+      <Route path="home" element={<Home />} />
+
+      {/* <Route path="*" element={<ErrorPage />} /> */}
+      
+    </Route>
+  ));
   
   
 

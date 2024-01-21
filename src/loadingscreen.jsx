@@ -80,7 +80,7 @@ const Content = ({ onClick }) => {
   // const [clickEffectVisible, setClickEffectVisible] = useState(false);
   return (
     <>
-    <Link to="/home">
+    <Link to="home">
     <div ref={glitch2.ref} className='loading-screen' onClick={onClick}>
       
       <div ref={glitch.ref} className='dvd-container'></div>
