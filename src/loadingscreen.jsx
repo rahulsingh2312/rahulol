@@ -22,7 +22,7 @@ const Content = ({ onClick }) => {
   });
   const glitch3 = useGlitch({
     "timing": {
-      "duration": 450
+      "duration": 150
     },
     "glitchTimeSpan": {
       "start": 0,
@@ -31,11 +31,11 @@ const Content = ({ onClick }) => {
     "shake": {
       "velocity": 5,
       "amplitudeX": 0.08,
-      "amplitudeY": 0.12
+      "amplitudeY": 0.02
     },
     "slice": {
       "count": 1,
-      "velocity": 2,
+      "velocity": 1,
       "minHeight": 0.01,
       "maxHeight": 0.1
     },
@@ -46,7 +46,7 @@ const Content = ({ onClick }) => {
 
   const glitch4 = useGlitch({
     "timing": {
-      "duration": 450
+      "duration": 150
     },
     "glitchTimeSpan": {
       "start": 0,
@@ -64,7 +64,7 @@ const Content = ({ onClick }) => {
       "maxHeight": 0.1
     },
     "pulse": {
-      "scale": 10
+      "scale": 3
     }
   });
   const [timer, setTimer] = useState(0);

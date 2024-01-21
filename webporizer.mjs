@@ -82,7 +82,7 @@ async function processDirectory(directory) {
 }
 
 // Specify the directory containing images
-const imageCodeDirectory = '/home/rahul/Documents/Pwebsite/rahulol/public';
+const imageCodeDirectory = '/hardcodeyourdirectoryurl';
 
 // Main function to start processing
 async function convert() {

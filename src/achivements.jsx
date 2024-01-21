@@ -2,7 +2,7 @@ import React from 'react';
 import {Swiper,SwiperSlide, useSwiper} from 'swiper/react'
 import "swiper/css"
 import './Project.css'
-import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay   } from 'swiper/modules';
 import data from './data.json'
 import left from './images/mirrordesign.webp'
 import right from './images/mirrrorlaptoponly.webp'
@@ -30,7 +30,7 @@ export default function Profile() {
           </div>
           </div>
           <section className=" wrapper-projects">
-        <div className="paddings  innerWidth p-container ">
+        <div className="paddings  innerWidth p-conainer ">
         <div className="" style={{filter: 'blur(0.7px)'}}>
         <div className='flex justify-center pb-20 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', }} >Projects</div></div>
        <div className='md:ml-40 ml-20 '>
@@ -49,12 +49,12 @@ export default function Profile() {
     slideShadows: true,
   }}
   pagination={true}
-  modules={[EffectCoverflow, Pagination, Autoplay]}
+  modules={[Pagination ,Autoplay]}
   className="mySwiper"
-  autoplay={{ delay: 1500, disableOnInteraction: true }}
+  autoplay={{ delay: 2500, disableOnInteraction: true }}
   breakpoints={{0:{slidesPerView:1, spaceBetween:40},480:{slidesPerView:1, spaceBetween:40},720:{slidesPerView:2, spaceBetween:40},1280:{slidesPerView:3,spaceBetween:50}}}
 >
-  <SlideButtons />
+  <SlideButtons  />
   {data.map((card, i) => (
     <SwiperSlide key={i}>
       <div style={{ background: 'linear-gradient(to right, #d9a7c7, #fffcdc)' }} className="flexCenter flexColStart p-card mt-10">

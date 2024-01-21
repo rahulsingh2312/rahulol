@@ -1,20 +1,15 @@
-import React, { useState} from "react";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";  // Updated import statement
+import React from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import './App.css';
-import Achievements from './achivements';
-import Navbar from './components/navbar';
-import Aboutme from './components/aboutme';
-import Contactme from './components/contactme';
-import LivingTech from './components/LivingTech';
+import Home from './home';
+import ErrorPage from "./error-page";
 import LoadingScreen from './loadingscreen';
 import audioFile from './audio/glitch1.mp3';
 
 const App = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  };
 
   const handleLoadingScreenClick = () => {
   
@@ -25,30 +20,22 @@ const App = () => {
       .catch(error => console.error("Error playing audio:", error));
   };
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <LoadingScreen onClick={handleLoadingScreenClick} />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/home",
+      element: <Home />,
+    },
+  ]);
+  
   
 
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={<LoadingScreen onClick={handleLoadingScreenClick} />}
-        />
-        <Route
-          path="/home"
-          element={
-            <div style={{ overflowX: 'hidden' }}>
-              <Navbar toggleNav={toggleNav} />
-              <div><br /></div>
-              <Aboutme />
-              <Achievements />
-              <LivingTech />
-              <Contactme />
-            </div>
-          }
-        />
-      </Routes>
-    </Router>
+    <RouterProvider router={router} />
   );
 }
 
