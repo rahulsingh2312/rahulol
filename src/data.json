@@ -55,27 +55,19 @@
    
     },
     {
-      "name": "snake game",
-      "detail": "lol reminds me of my ex ",
-      "image": "./MacBook Pro 14_ - 1.webp",
+      "name": "Font Lab",
+      "detail": "Your One stop webapp for Fonts ",
+      "image": "https://font-lab.vercel.app/Bard_Generated_Image.jpg",
       "button-name": "Visit",
-      "link1": "https://rahulsingh2312.github.io/gamewhichremindsmeofher/"
+      "link1": "font-lab.vercel.app"
    
     },
-    {
-        "name": "connect 4 python ",
-        "detail": "pygame ",
-        "image": "./MacBook Pro 14_ - 2(1).webp",
-        "button-name": "Code",
-        "link1": "https://github.com/rahulsingh2312/connect4/"
-     
-      },
       {
-        "name": "Todolist ",
-        "detail": "but on flask and mongodb  ",
-        "image": "./246606065-888531d9-c3ba-4bba-9234-055e8889e25b.webp",
-        "button-name": "Code",
-        "link1": "https://github.com/rahulsingh2312/todolist/"
+        "name": "NutriSnap ",
+        "detail": " Your One stop webapp for all your skincare and fitness goals ",
+        "image": "https://nutrisnap.vercel.app/header%202.webp",
+        "button-name": "Visit",
+        "link1": "nutrisnap.vercel.app"
      
       }
 
