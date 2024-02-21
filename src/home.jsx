@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-
+import Project from './project/project'
 import Achievements from './achivements';
 import Navbar from './components/navbar';
 import Aboutme from './components/aboutme';
@@ -22,6 +22,7 @@ const Home = () => {
     <Navbar toggleNav={toggleNav} />
     <div><br /></div>
     <Aboutme />
+    <Project />
     <Achievements />
     <LivingTech />
     <Contactme />
