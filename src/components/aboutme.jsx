@@ -68,17 +68,23 @@ function AboutMe() {
       {/* <div style={{ width: '20%', height: '20%', position: 'absolute', left: '0', background: `linear-gradient(90deg, ${gradientColors[0][0]} 100%, ${gradientColors[0][1]} 100%)`, borderRadius: 400, filter: 'blur(40px)', animation: 'slideRight 4s linear infinite' }} /> */}
       {/* <div style={{ width: '20%', height: '20%', position: 'absolute', right: '50%', background: `linear-gradient(90deg, ${gradientColors[1][0]} 100%, ${gradientColors[1][1]} 100%)`, borderRadius: 400, filter: 'blur(40px)', animation: 'slideLeft 3s linear infinite' }} /> */}
      <div className=''>
-      <div className='w-1/5 h-1/5 md:w-1/6 md:h-1/6' style={{ position: 'absolute',zIndex: 0, top: '0', left:'70%', background: `linear-gradient(90deg, ${gradientColors[0][0]} 100%, ${gradientColors[0][1]} 100%)`, borderRadius: 400,filter: 'blur(70px)', animation: 'slideRight 4s linear infinite' }} />
-      <div className='w-1/5 h-1/5 md:w-1/6 md:h-1/6' style={{ position: 'absolute', zIndex: 0,bottom: '50%', left:'20%', background: `linear-gradient(90deg, ${gradientColors[1][0]} 100%, ${gradientColors[1][1]} 100%)`, borderRadius: 400,  filter: 'blur(70px)', animation: 'slideLeft 3s linear infinite' }} />
-      <div className='w-1/5 h-1/5 md:w-1/6 md:h-1/6' style={{ position: 'absolute', zIndex: 0,right: '50%' , bottom:'10%', background: `linear-gradient(90deg, ${gradientColors[0][0]} 100%, ${gradientColors[0][1]} 100%)`, borderRadius: 400,  filter: 'blur(70px)', animation: 'slideRight 4s linear infinite' }} />
-      <div className='w-1/5 h-1/5 md:w-1/6 md:h-1/6' style={{ position: 'absolute', zIndex: 0,left: '0%' , top:'50%', background: `linear-gradient(90deg, ${gradientColors[1][0]} 100%, ${gradientColors[2][1]} 100%)`, borderRadius: 400,filter: 'blur(70px)', animation: 'slideLeft 3s linear infinite' }} />
-      <div className='w-1/5 h-1/5 md:w-1/6 md:h-1/6' style={{ position: 'absolute', right: '40%',top:'40%',zIndex: 0, background: `linear-gradient(90deg, ${gradientColors[2][0]} 100%, ${gradientColors[0][1]} 100%)`, borderRadius: 400,  filter: 'blur(70px)', animation: 'slideRight 4s linear infinite' }} />
-      <div className='w-1/5 h-1/5 md:w-1/6 md:h-1/6' style={{ position: 'absolute', left: '30%',zIndex: 0, background: `linear-gradient(90deg, ${gradientColors[2][0]} 100%, ${gradientColors[0][0]} 100%)`, borderRadius: 400,  filter: 'blur(70px)', animation: 'slideLeft 3s linear infinite' }} />
-      
+     <div className='absolute w-1/5 h-1/5 md:w-1/6 md:h-1/6 z-0 md:z-10' style={{ top: '0', left:'70%', background: `linear-gradient(90deg, ${gradientColors[0][0]} 100%, ${gradientColors[0][1]} 100%)`, borderRadius: '100%', filter: 'blur(70px)', animation: 'slideRight 4s linear infinite' }} />
+<div className='absolute w-1/5 h-1/5 md:w-1/6 md:h-1/6 z-0 md:z-10' style={{ bottom: '50%', left:'20%', background: `linear-gradient(90deg, ${gradientColors[1][0]} 100%, ${gradientColors[1][1]} 100%)`, borderRadius: '100%',  filter: 'blur(70px)', animation: 'slideLeft 3s linear infinite' }} />
+<div className='absolute w-1/5 h-1/5 md:w-1/6 md:h-1/6 z-0 md:z-10' style={{ right: '50%' , bottom:'10%', background: `linear-gradient(90deg, ${gradientColors[0][0]} 100%, ${gradientColors[0][1]} 100%)`, borderRadius: '100%',  filter: 'blur(70px)', animation: 'slideRight 4s linear infinite' }} />
+<div className='absolute w-1/5 h-1/5 md:w-1/6 md:h-1/6 z-0 md:z-10' style={{ left: '0%' , top:'50%', background: `linear-gradient(90deg, ${gradientColors[1][0]} 100%, ${gradientColors[2][1]} 100%)`, borderRadius: '100%',filter: 'blur(70px)', animation: 'slideLeft 3s linear infinite' }} />
+<div className='absolute w-1/5 h-1/5 md:w-1/6 md:h-1/6 z-0 md:z-10' style={{ right: '40%',top:'40%', background: `linear-gradient(90deg, ${gradientColors[2][0]} 100%, ${gradientColors[0][1]} 100%)`, borderRadius: '100%',  filter: 'blur(70px)', animation: 'slideRight 4s linear infinite' }} />
+<div className='absolute w-1/5 h-1/5 md:w-1/6 md:h-1/6 z-0 md:z-10' style={{ left: '30%', background: `linear-gradient(90deg, ${gradientColors[2][0]} 100%, ${gradientColors[0][0]} 100%)`, borderRadius: '100%',  filter: 'blur(70px)', animation: 'slideLeft 3s linear infinite' }} />
+
+
       </div>
-      <div className='flex  justify-center   pt-28 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', fontWeight: '100', lineHeight: 1.3, wordWrap: 'break-word' }}>RAHUL <br />SINGH<br /> "मतिहीनता" <br />"l'art du <br />CODE" </div>
-      <div className='md:flex md:justify-center md:-ml-36 mt-10 ml-10' style={{ color: 'rgba(0, 0, 0, 0.47)', fontSize: 16, fontFamily: 'Inknut Antiqua', fontWeight: '300', lineHeight: 2, wordWrap: 'break-word' }}>Tap Anywhere For Sound <br />and More Colors .</div>
-      <div  ref={glitch.ref}  className='image flex justify-end md:mt-36 mt-28 mr-5 sm:mr-10'> <img src={Soundon} alt="sndon" /></div>
+      <div style={{fontFamily:'Inknut Antiqua'}} className='flex text-gray-500 justify-center text-6xl leading-relaxed pt-28 md:pt-40 z-10 text-opacity-80  md:text-12xl  font-thin  break-words'>
+    <div>RAHUL <br />SINGH<br /> "मतिहीनता" <br />"l'art du <br />CODE" </div>
+</div>
+<div style={{fontFamily:'Inknut Antiqua'}}  className='md:flex md:justify-center   md:ml-0 mt-10 ml-10 text-opacity-50 text-xl md:text-2xl  font-light leading-loose break-words'>
+    <div>Tap Anywhere For Sound <br />and More Colors .</div>
+
+</div>
+     <div  ref={glitch.ref}  className='image mb-20 flex justify-end md:mt-36 mt-28 mr-5 sm:mr-10'> <img src={Soundon} alt="sndon" /></div>
     </div>
   );
 }
