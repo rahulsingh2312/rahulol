@@ -127,8 +127,8 @@ export function Project1({Data}) {
          className="flex md:justify-between justify-center">
           <div className=" font-black text-3xl hidden md:block">SOME</div>
           <div className={`flex items-center `}>
-            <div>{Data.index}</div>
-            <div className="w-[50px] h-[1px] bg-white mx-2"></div>
+            <div>{Data.index}</div> &nbsp;&nbsp;&nbsp;----- &nbsp;&nbsp;&nbsp;
+            {/* <div className="w-[50px] h-[1px] bg-white mx-2">-</div> */}
             <div>07</div>
           </div>
           <div className="font-black text-3xl hidden md:block">PROJECTS</div>
@@ -174,11 +174,11 @@ export function Project1({Data}) {
           <img 
             className="p-8 md:p-5  object-cover"
             src={Data.img[currentImageIndex]} alt="" />
-          </div>
+          </div><a href={Data.link} target="blank">
           <div className={`lg:flex lg:flex-col lg:items-start`}>
           <div className={` text-6xl font-black leading-none text-center lg:order-1 md:text-[7rem] lg:text-[9rem]`}>{Data.title}</div>
-          <div className={` text-center text-base md:text-lg  opacity-90 tracking-wider mb-4`}>{Data.description}</div>
-          </div>
+          <div className={` text-center text-base md:text-lg sm:pt-4 opacity-90 tracking-wider mb-4`}>{Data.description}</div>
+          </div></a>
           <div className={` text-2xl lg:hidden tracking-tighter underline-offset-4 underline `}><a href={Data.link} target="blank">View Site</a></div>
         </motion.div>
 
