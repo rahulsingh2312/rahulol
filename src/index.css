@@ -98,6 +98,9 @@ body {
 }
 
 @media (min-width: 640px) {
+  .blr {
+    filter: blur(180px);
+  }
   .paddings {
     padding: 4rem;
   }
@@ -190,7 +193,8 @@ body{
   }
 
 
-
+  
+  
 .close-btn-icon-wrap {
   width: 100%;
   height: 100%;

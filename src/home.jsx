@@ -18,15 +18,19 @@ const Home = () => {
   
 
   return (
+    <>
     <div style={{ overflowX: 'hidden' }}>
     <Navbar toggleNav={toggleNav} />
     <div><br /></div>
     <Aboutme />
-    <Project />
-    <Achievements />
-    <LivingTech />
+    </div>
+    {/* <Project /> */}
+    
+    {/* <Achievements /> */}
+    {/* <LivingTech /> */}
     <Contactme />
-  </div>
+   
+</>
   );
 }
 

@@ -83,6 +83,7 @@ function Navbar({toggleNav}) {
           </ul>
         </div>
       </div>
+      
     </nav>
     <Outlet />
     </div>
