@@ -64,8 +64,8 @@ Youtube Api to stream that song directly in the webapp . ",
         index: '07',
         color:"bg-[#b5bfa1]",
         title: "Glow Up Essentials",
-link:"https://glowup.framer.ai/",
-        description: "GlowUp Essentials is a mobile application to provide reminders for water intake, sunscreen application, and other skincareproducts. It offers customizable notifications and generates health charts .The push notifications through Firebase Cloud and the application is written inJava. user base of 50+ users.” ,
+        link:"https://glowup.framer.ai/",
+        description: "GlowUp Essentials is a mobile application to provide reminders for water intake, sunscreen application, and other skincareproducts. It offers customizable notifications and generates health charts .The push notifications through Firebase Cloud and the application is written inJava. user base of 50+ users." ,
         className:"top-0",
         img:["https://betcrypt-cw.vercel.app/assets/im2-MVyBy2v3.svg"]
     }
