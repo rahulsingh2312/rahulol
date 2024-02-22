@@ -59,7 +59,7 @@ const swiperStyles = `
 
 export default function App() {
   return (
-   <>
+   <div className='w-full absolute z-50 overflow-hidden'>
     <div className=" z-50 " style={{filter: 'blur(1px)' , backgroundColor: "#F4EAE1", overflow: 'hidden'}}>
       <div className='flex justify-center md:my-20   mt-40 mb-10 md:mb-0 pb-0 md:pt-40 md:text-5xl text-4xl' style={{   zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontFamily: 'Inknut Antiqua' }}>Livin Tech :3</div>
       </div>
@@ -78,21 +78,21 @@ export default function App() {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
+        modules={[ Pagination, Autoplay]}
         className="mySwiper"
-        autoplay={{ delay: 450, disableOnInteraction: false }}
+        autoplay={{ delay: 1500, disableOnInteraction: false }}
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <div className="swiper-slide-content">
-              <img src={src} alt={`Slide ${index + 1}`} />
+            <div className="swiper-slide-content m-2 border-[20px]">
+              <img src={src} className='rounded-[1rem]' alt={`Slide ${index + 1}`} />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
    
-    </>
+    </div>
 
   );
 }

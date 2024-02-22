@@ -21,15 +21,19 @@ const Home = () => {
     <>
     <div style={{ overflowX: 'hidden' }}>
     <Navbar toggleNav={toggleNav} />
+    
     <div><br /></div>
     <Aboutme />
   
     </div>
  
     <Project />
+    <LivingTech />
     <Contactme />
+
+    
     {/* <Achievements /> */}
-    {/* <LivingTech /> */}
+   
    
    
 </>
