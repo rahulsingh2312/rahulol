@@ -35,7 +35,7 @@ live games.",
         index: '04',
         color:"bg-[#cdb4db]",
         title: "TedxTcet",
-link:"www.tedxtcet.com"
+link:"www.tedxtcet.com",
         description: "Created the Official Site of TedxTcet during my tenure in TedxTcet as a Technical Lead of that club",
         className:"top-0",
         img:["https://betcrypt-cw.vercel.app/assets/im2-MVyBy2v3.svg"]
