@@ -114,7 +114,7 @@ export function Project1({Data}) {
       onScroll={handleScroll}
       animate={controls}
       
-        className={`w-full h-screen ${Data.color} text-white pt-4 px-10  sticky ${Data.className} z-10`}
+        className={`w-full h-screen ${Data.color} text-black pt-4 px-10  sticky ${Data.className} z-10`}
       >
 
         
@@ -129,7 +129,7 @@ export function Project1({Data}) {
           <div className={`flex items-center `}>
             <div>{Data.index}</div>
             <div className="w-[50px] h-[1px] bg-white mx-2"></div>
-            <div>05</div>
+            <div>07</div>
           </div>
           <div className="font-black text-3xl hidden md:block">PROJECTS</div>
         </motion.div>
@@ -170,13 +170,13 @@ export function Project1({Data}) {
         exit={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.3 }}
         className={`flex flex-col lg:flex-row justify-center lg:justify-between w-full items-center lg:items-stretch  h-screen lg:relative lg:bottom-[18rem] xl:bottom-[15rem] xxl:bottom-[10rem]`}>
-          <div className={`flex justify-center w-[18rem] h-[18rem] md:w-[26rem] md:h-[22rem] bg-opacity-5 bg-white overflow-hidden  rounded-xl -mt-10 mb-4 lg:order-2`}>
+          <div className={`flex justify-center w-[18rem] h-[28rem] md:w-[36rem] md:h-[42rem] bg-opacity-5 bg-white overflow-hidden  rounded-xl -mt-10 mb-4 lg:order-2`}>
           <img 
-            className="p-8  object-cover"
+            className="p-8 md:p-5  object-cover"
             src={Data.img[currentImageIndex]} alt="" />
           </div>
           <div className={`lg:flex lg:flex-col lg:items-start`}>
-          <div className={` text-9xl font-black leading-none text-center lg:order-1 md:text-[14rem] lg:text-[20rem]`}>{Data.title}</div>
+          <div className={` text-6xl font-black leading-none text-center lg:order-1 md:text-[7rem] lg:text-[9rem]`}>{Data.title}</div>
           <div className={` text-center text-base md:text-lg  opacity-90 tracking-wider mb-4`}>{Data.description}</div>
           </div>
           <div className={` text-2xl lg:hidden tracking-tighter underline-offset-4 underline `}><a href={Data.link} target="blank">View Site</a></div>
