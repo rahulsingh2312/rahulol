@@ -1,4 +1,4 @@
-"use client"
+
 import { data } from "autoprefixer";
 // import { PPmori,arges } from "../../../../public/fonts/fonts";
 import { motion,useAnimation } from "framer-motion";
@@ -114,7 +114,7 @@ export function Project1({Data}) {
       onScroll={handleScroll}
       animate={controls}
       
-        className={`w-full h-screen ${Data.color} text-white pt-4 px-10 overflow-hidden sticky  z-10`}
+        className={`w-full h-screen ${Data.color} text-white pt-4 px-10 overflow-hidden sticky ${Data.className} z-10`}
       >
 
         
