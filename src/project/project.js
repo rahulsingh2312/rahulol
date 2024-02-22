@@ -1,5 +1,6 @@
 import { Data } from "./projectdata"
 import { Project1 } from "./project1"
+import Contact from "../components/contactme"
 
 export default function Project(){
     return(
@@ -12,7 +13,9 @@ export default function Project(){
             })
         }
         
-        
+        <div>
+{/* <Contact/> */}
+        </div>
         </>
     )
 }

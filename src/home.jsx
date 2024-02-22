@@ -23,12 +23,14 @@ const Home = () => {
     <Navbar toggleNav={toggleNav} />
     <div><br /></div>
     <Aboutme />
+  
     </div>
-    {/* <Project /> */}
-    
+ 
+    <Project />
+    <Contactme />
     {/* <Achievements /> */}
     {/* <LivingTech /> */}
-    <Contactme />
+   
    
 </>
   );

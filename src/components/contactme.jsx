@@ -29,7 +29,7 @@ function Contact() {
   };
 
   return (
-    <div className="bottom-0 z-50" style={{filter: 'blur(0.5px)'}}>
+    <div className=" w-full absolute z-50 overflow-hidden" style={{filter: 'blur(0.5px)'}}>
     <div id='getintouch' className='pirateone' style={{ backgroundColor: "#F4EAE1" }}>
       <div className='md:flex sm:pt-20'>
         <div className='md:w-1/2'>
