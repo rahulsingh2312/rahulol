@@ -1,57 +1,26 @@
-import React from "react";
-import { HashRouter ,Routes, Route   } from "react-router-dom";
-import './App.css';
+import { useState,useEffect } from 'react';
 import Home from './home';
-// import ErrorPage from "./error-page";
-import LoadingScreen from './loadingscreen';
-import audioFile from './audio/glitch1.mp3';
+import { Preloader } from './Preloader/Preloader'
+import { AnimatePresence } from 'framer-motion';
 
-const App = () => {
-  function logLocationOnReload() {
-    console.log("Page reloaded. Current location:", window.location.href);
-  }
+export default function App() {
 
-  // Attach the function to the 'beforeunload' event
-  window.addEventListener('beforeunload', logLocationOnReload);
-  const handleLoadingScreenClick = () => {
-  
+  const [loading, setLoading] = useState(true);
 
-    const audio = new Audio(audioFile);
-    audio.play()
-      .then(() => console.log("Audio played successfully"))
-      .catch(error => console.error("Error playing audio:", error));
-  };
-
-  // {
-  //   path: "/",
-  //   element: <LoadingScreen onClick={handleLoadingScreenClick} />,
-  //   errorElement: <ErrorPage />,
-  // },
-  // {
-  //   path: "/home",
-  //   element: <Home />,
-  // },
-
-  // const router = createBrowserRouter(createRoutesFromElements(
-  //   <Route>
-     
-  //     <Route path="home" element={<Home />} />
-
-  //     {/* <Route path="*" element={<ErrorPage />} /> */}
-      
-  //   </Route>
-  // ));
-  
-  
+  useEffect(() => {
+    setTimeout(() =>{ 
+      setLoading(false)
+      document.body.style.cursor = "default";
+    }, 2000);
+    
+  })
 
   return (
-    <HashRouter>
-    <Routes>
-    <Route index element={<LoadingScreen onClick={handleLoadingScreenClick} /> } />
-    <Route path="home" element={<Home />} />
-      </Routes>
-  </HashRouter>
-  );
+   <>
+   <AnimatePresence>
+   {loading && <Preloader/>}
+   </AnimatePresence>
+    <Home />
+   </>
+  )
 }
-
-export default App;
