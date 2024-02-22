@@ -13,6 +13,7 @@ export const Data = [
         index: '02',
         color:"bg-[#9d785d]",
         title: "Invesnow.in",
+        link:"invesnow.in",
         description: " a webapp to create an account from their demat accounts and then based on that Incorporated an AI-driven system to generate automated buy orders on their behalf.",
         className:"top-0",
         img:["/bull1.webp","/bull2.webp","/bull3.webp","/bull4.webp","/bull5.webp","/bull6.webp","/bull7.webp",],

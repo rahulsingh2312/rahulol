@@ -4,7 +4,7 @@ import Contact from "../components/contactme"
 
 export default function Project(){
     return(
-        <>
+        <div id="projects">
         {
             Data.map((item)=>{
                 return(
@@ -16,6 +16,6 @@ export default function Project(){
         <div>
 {/* <Contact/> */}
         </div>
-        </>
+        </div>
     )
 }
