@@ -171,9 +171,9 @@ export function Project1({Data}) {
         transition={{ duration: 0.3 }}
         className={`flex flex-col lg:flex-row justify-center lg:justify-between w-full items-center lg:items-stretch  h-screen lg:relative lg:bottom-[18rem] xl:bottom-[15rem] xxl:bottom-[10rem]`}>
           <div className={`flex justify-center w-[18rem] h-[28rem] md:w-[36rem] md:h-[42rem] bg-opacity-5 bg-white overflow-hidden  rounded-xl -mt-10 mb-4 lg:order-2`}>
-          <img 
+          <a href={Data.link} target="blank">   <img 
             className="p-8 md:p-5  object-cover"
-            src={Data.img[currentImageIndex]} alt="" />
+            src={Data.img[currentImageIndex]} alt="" /> </a>
           </div><a href={Data.link} target="blank">
           <div className={`lg:flex lg:flex-col lg:items-start`}>
           <div className={` text-6xl font-black leading-none text-center lg:order-1 md:text-[7rem] lg:text-[9rem]`}>{Data.title}</div>
