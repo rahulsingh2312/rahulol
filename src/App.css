@@ -112,9 +112,9 @@
   content: '';
   position: absolute;
   top: 0;
-  left: -50px;
+  left: -10px;
   z-index: 50;
-  width: 10%; /* Adjust the width as needed */
+  width: 20%; /* Adjust the width as needed */
   height: 50%;
   background: linear-gradient(to right, #F6CBFF 8.54%, rgba(255, 255, 255, 0) 102.6%);
   mix-blend-mode: hard-light;
@@ -127,9 +127,9 @@
   content: '';
   position: absolute;
   top: 0;
-  right: -50px;
+  right: -10px;
   z-index: 50;
-  width: 10%; /* Adjust the width as needed */
+  width: 20%; /* Adjust the width as needed */
   height: 50%;
   background: linear-gradient(to left, #F6CBFF 8.54%, rgba(255, 255, 255, 0) 102.6%);
   mix-blend-mode: hard-light;
