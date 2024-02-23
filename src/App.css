@@ -187,6 +187,18 @@ background-color: black;
   z-index:9999;
 }
 
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+}
+
+.nav-container {
+  /* transition: background-color 0.5s ease; Add smooth transition for background color change */
+}
 
 .button{
   position: relative;
