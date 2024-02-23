@@ -55,11 +55,11 @@ function Navbar({ toggleNav }) {
     <div className="nav-container" style={{ borderBottom: '2px solid gray', backgroundColor: "#F4EAE1", filter: 'blur(0.0px)' }}>
       <nav style={{ backgroundColor: "#F4EAE1", filter: 'blur(0.0px)' }} className="bg-white border-gray-200 md:text-2xl sm:text-xl dark:bg-white-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <div className='flex md:ml-5 ml-0 justify-center items-center'>
-            <div style={{ backgroundColor: "#F4EAE1", filter: 'blur(0.0px)' }}  className='md:w-12 w-10' onClick={togglePopup}>
+          <div onClick={togglePopup} className='flex md:ml-5 ml-0 justify-center items-center'>
+            <div style={{ backgroundColor: "#F4EAE1", filter: 'blur(0.0px)' }}  className='md:w-12 w-10' 
               <img className='rounded-[50%]' src="/pfp.webp" alt='pfp' />
               </div>
-            <h1 onClick={togglePopup} style={{ backgroundColor: "#F4EAE1", filter: 'blur(0.7px)' }} className="text-4xl p-3 text-gray-700 font-bold">rahulol</h1> 
+            <h1  style={{ backgroundColor: "#F4EAE1", filter: 'blur(0.7px)' }} className="text-4xl p-3 text-gray-700 font-bold">rahulol</h1> 
           </div>
 
           <div  className='md:hidden'>
