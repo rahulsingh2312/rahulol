@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Outlet } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
+import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import { FaWhatsapp } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { BsTwitterX } from "react-icons/bs";
@@ -99,7 +100,7 @@ function Navbar({ toggleNav }) {
               <li>
                 <a
                   target='_blank' rel="noreferrer"
-                  href="https://drive.google.com/file/d/1uMvYg2TJ1g2BhhrdyWyHnJ4fD6EmYpOi/view?usp=sharing"
+                  href="https://drive.google.com/file/d/15dMjtHnYYlMyj7CXvXAOXDPCQkY-AJrY/view?usp=drivesdk"
                   className="block py-4 sm:border-zinc-100 sm:border-2 sm:mt-2 md:mt-0 pl-3 pr-4 md:mr-20 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 dark:text-black dark:hover:bg-gray-700 dark:hover:text-grey md:dark:hover:bg-transparent"
                 >
                   Resume
@@ -118,42 +119,42 @@ function Navbar({ toggleNav }) {
             <li>
               <a href="https://github.com/rahulsingh2312" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                    <FaGithub /> &nbsp; @rahulsingh2312
+                    <FaGithub /> &nbsp; @rahulsingh2312 &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/rahulsinghhh2312/" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                <SiLinkedin /> &nbsp; @rahulsinghhh2312
+                <SiLinkedin /> &nbsp; @rahulsinghhh2312 &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
             <li>
               <a href="mailto:rahulsinghhh2312@gmail.com" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                <CgMail />   &nbsp; rahulsingh2312@gmail.com
+                <CgMail />   &nbsp; rahulsingh2312@gmail.com &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/rrahulol/" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                  <GrInstagram /> &nbsp; @rrahulol
+                  <GrInstagram /> &nbsp; @rrahulol &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
             <li>
               <a href="https://wa.link/bnpth1" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                <FaWhatsapp />  &nbsp; +91 9321441951
+                <FaWhatsapp />  &nbsp; +91 9321441951 &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
             <li>
               <a href="https://twitter.com/Rahulsinghh23" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                <BsTwitterX />  &nbsp; @Rahulsinghh23
+                <BsTwitterX />  &nbsp; @Rahulsinghh23 &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
@@ -161,7 +162,7 @@ function Navbar({ toggleNav }) {
             <li>
               <a href="Your_WhatsApp_Link" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                &nbsp; Twitter
+                &nbsp; Twitter &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
