@@ -82,7 +82,7 @@ function AboutMe() {
       </div>
       <div className='flex  justify-center   pt-28 md:pt-40'  style={{ zIndex: 10, color: 'rgba(105, 111, 77, 0.80)', fontSize: 50, fontFamily: 'Inknut Antiqua', fontWeight: '100', lineHeight: 1.3, wordWrap: 'break-word' }}>RAHUL <br />SINGH<br /> "मतिहीनता" <br />"l'art du <br />CODE" </div>
       <div className='md:flex md:justify-center md:-ml-36 mt-10 ml-10' style={{ color: 'rgba(0, 0, 0, 0.47)', fontSize: 16, fontFamily: 'Inknut Antiqua', fontWeight: '300', lineHeight: 2, wordWrap: 'break-word' }}>Tap Anywhere For Sound <br />and More Colors .</div>
-      <div  style={{ backgroundColor: "#F4EAE1" ,filter: 'blur(1px)' }}  ref={glitch.ref}  className='image overflow-hidden flex justify-end md:mt-36 mt-28 mr-5 sm:mr-10'> <img src={Soundon} alt="sndon" /></div>
+      <span  style={{ backgroundColor: "#F4EAE1" ,filter: 'blur(1px)' }}  ref={glitch.ref}  className='image overflow-hidden flex justify-end md:mt-36 mt-28 mr-5 sm:mr-10'> <img src={Soundon} alt="sndon" /></span>
     </div>
   );
 }
