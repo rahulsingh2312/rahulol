@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <>
-    <div style={{ overflowX: 'hidden' }}>
+    <div style={{ overflowX: 'hidden' , backgroundColor: "#F4EAE1"  }}>
     <Navbar toggleNav={toggleNav} />
     
     <div><br /></div>
