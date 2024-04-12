@@ -128,7 +128,7 @@ export default function Blog() {
     <div className="text-center font-bold mt-20">
 
     <div className='text-6xl max-sm:text-2xl  max-md:text-4xl text-green-400'>rahulol blogs ✍🏻</div>
-    <div className="mt-20 mx-40">
+    <div className="mt-20 md:mx-40">
       {blogs.map((blog) => (
         <div key={blog.id} className="my-4 bg-gray-900 rounded-md shadow-md p-6">
           <div className="font-bold text-xl text-pink-400 mb-2">{blog.title}</div>
