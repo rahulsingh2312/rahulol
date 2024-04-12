@@ -1,26 +1,29 @@
-import { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './home';
-import { Preloader } from './Preloader/Preloader'
+import Blog from './blog/page';
+import { Preloader } from './Preloader/Preloader';
 import { AnimatePresence } from 'framer-motion';
 
 export default function App() {
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() =>{ 
-      setLoading(false)
-      document.body.style.cursor = "default";
+    setTimeout(() => {
+      setLoading(false);
+      document.body.style.cursor = 'default';
     }, 2000);
-    
-  })
+  }, []);
 
   return (
-   <>
-   <AnimatePresence>
-   {loading && <Preloader/>}
-   </AnimatePresence>
-    <Home />
-   </>
-  )
+    <BrowserRouter>
+      <AnimatePresence>
+        {loading && <Preloader />}
+      </AnimatePresence>
+      <Routes>
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }

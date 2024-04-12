@@ -13,6 +13,11 @@
     color: rgb(0, 0, 0);
     background: rgb(244, 165, 252);
   }
+  .ball{
+    z-index: -1;
+    filter: blur(100px);
+  
+  }
   @font-face {
     font-family: "Arges";
     font-style: normal;
