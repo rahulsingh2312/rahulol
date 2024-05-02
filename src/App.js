@@ -27,6 +27,7 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/p" element={<Practicals />} />
         <Route path="/d" element={<PracticalsD />} />
+   <Route path="/os" element={<PracticalsD />} />
         <Route path="/daa" element={<PracticalsDaa />} />
         <Route path="/cn" element={<PracticalsCn />} />
         <Route path="/" element={<Home />} /> 
