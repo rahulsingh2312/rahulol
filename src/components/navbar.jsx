@@ -100,7 +100,7 @@ function Navbar({ toggleNav }) {
               <li>
                 <a
                   target='_blank' rel="noreferrer"
-                  href="app.rezi.ai/s/ryuZXbjLPNXo0ZqGBU34"
+                  href="https://app.rezi.ai/s/ryuZXbjLPNXo0ZqGBU34"
                   className="block py-4 sm:border-zinc-100 sm:border-2 sm:mt-2 md:mt-0 pl-3 pr-4  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 dark:text-black dark:hover:bg-gray-700 dark:hover:text-grey md:dark:hover:bg-transparent"
                 >
                   Resume
@@ -161,9 +161,9 @@ function Navbar({ toggleNav }) {
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/Rahulsinghh23" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/rrahulol" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                <BsTwitterX />  &nbsp; @Rahulsinghh23 &nbsp; <HiOutlineArrowUpRight />
+                <BsTwitterX />  &nbsp; @rrahulol &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
