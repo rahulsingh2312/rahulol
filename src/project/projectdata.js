@@ -3,7 +3,7 @@ export const Data = [
         index: '01',
         color:"bg-[#FFCCCC]",
         title: "NutriSnap",
-        description: "Nutrisnap has an userbase of 250+ users , One stop webapp for all your skincare and fitness goals and a scoreboard with all users on it",
+        description: "Nutrisnap has an userbase of 6500+ users, One stop webapp for all your skincare and fitness goals and a scoreboard with all users on it",
         className: "top-0",
         link:"https://nutrisnap.vercel.app",
         img:["/nutri3.webp","/nutri5.webp","/nutri4.webp","/nutri1.webp","/nutri2.webp","/nutri6.webp","/nutri7.webp","/nutri8.webp","/nutri9.webp",]
