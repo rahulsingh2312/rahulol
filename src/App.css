@@ -93,58 +93,53 @@
   } 
 }
 
-.slider-glitter::before,
-.slider-glitter::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  z-index: 50;
-  width: 10%; /* Adjust the width as needed */
-  height: 50%;
-  background: linear-gradient(92.19deg, #F6CBFF 8.54%, rgba(255, 255, 255, 0) 102.6%);
-  mix-blend-mode: hard-light;
-  filter: blur(2px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  backdrop-filter: blur(2px);
-  
+@media (min-width: 768px) {
+  .slider-glitter::before,
+  .slider-glitter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    width: 10%; /* Adjust the width as needed */
+    height: 50%;
+    background: linear-gradient(92.19deg, #F6CBFF 8.54%, rgba(255, 255, 255, 0) 102.6%);
+    mix-blend-mode: hard-light;
+    filter: blur(2px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(2px);
+    animation: glitter 2s ease infinite;
+  }
 
-  animation: glitter 2s ease infinite;
+  .slider-glitter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    z-index: 50;
+    width: 20%; /* Adjust the width as needed */
+    height: 50%;
+    background: linear-gradient(to right, #F6CBFF 8.54%, rgba(255, 255, 255, 0) 102.6%);
+    mix-blend-mode: hard-light;
+    filter: blur(2px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(2px);
+    animation: glitter 2s ease infinite;
+  }
+
+  .slider-glitter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    z-index: 50;
+    width: 20%; /* Adjust the width as needed */
+    height: 50%;
+    background: linear-gradient(to left, #F6CBFF 8.54%, rgba(255, 255, 255, 0) 102.6%);
+    mix-blend-mode: hard-light;
+    filter: blur(2px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(2px);
+    animation: glitter 2s ease infinite;
+  }
 }
 
-.slider-glitter::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -10px;
-  z-index: 50;
-  width: 20%; /* Adjust the width as needed */
-  height: 50%;
-  background: linear-gradient(to right, #F6CBFF 8.54%, rgba(255, 255, 255, 0) 102.6%);
-  mix-blend-mode: hard-light;
-  filter: blur(2px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  backdrop-filter: blur(2px);
-  animation: glitter 2s ease infinite;
-}
-
-
-/* Adjust these styles as per your requirements */
-
-
-/* Adjust these styles as per your requirements */
-
-.slider-glitter::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -10px;
-  z-index: 50;
-  width: 20%; /* Adjust the width as needed */
-  height: 50%;
-  background: linear-gradient(to left, #F6CBFF 8.54%, rgba(255, 255, 255, 0) 102.6%);
-  mix-blend-mode: hard-light;
-  filter: blur(2px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  backdrop-filter: blur(2px);
-  animation: glitter 2s ease infinite;
-}
 
 /* @keyframes glitter {
   0% {
