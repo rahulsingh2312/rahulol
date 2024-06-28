@@ -25,14 +25,16 @@ const Home = () => {
     
     <div><br /></div>
     <Aboutme />
-  
+    <Project />
     </div>
  
-    <Project />
+   
+
+   <div style={{ backgroundColor: "#F4EAE1" }} className=" md:pt-20"></div>  
     <iframe
   width="100%"
   style={{ backgroundColor: "#F4EAE1" }}
-  className="h-[780px] md:h-[550px]"
+  className="h-[900px]  md:h-[550px]"
   src="https://bento.me/rahulol"
   title="description"
   scrolling="no"
