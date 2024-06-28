@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import Project from './project/project'
-import Achievements from './achivements';
+// import Achievements from './achivements';
 import Navbar from './components/navbar';
 import Aboutme from './components/aboutme';
 import Contactme from './components/contactme';
@@ -19,7 +19,8 @@ const Home = () => {
 
   return (
     <>
-    <div style={{ overflowX: 'hidden' , backgroundColor: "#F4EAE1"  }}>
+    <div style={{ overflowX: 'hidden' ,overflowY: 'hidden' , backgroundColor: "#F4EAE1"  }}>
+
     <Navbar toggleNav={toggleNav} />
     
     <div><br /></div>
@@ -28,10 +29,20 @@ const Home = () => {
     </div>
  
     <Project />
+    <iframe
+  width="100%"
+  style={{ backgroundColor: "#F4EAE1" }}
+  className="h-[780px] md:h-[550px]"
+  src="https://bento.me/rahulol"
+  title="description"
+  scrolling="no"
+/>
+
     <LivingTech />
+  
     <Contactme />
 
-    
+   
     {/* <Achievements /> */}
    
    
