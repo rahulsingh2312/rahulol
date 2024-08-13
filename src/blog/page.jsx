@@ -3,7 +3,7 @@ import { initializeApp } from 'firebase/app';
 import { gsap } from "gsap";
 import { getAuth } from 'firebase/auth';
 import { getDatabase, ref, push, set, onValue } from 'firebase/database';
-
+import { Helmet } from "react-helmet";
 // Initialize Firebase with your configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCrP58lBBO3ivag2M8TuO2Yabknony5-TE",
@@ -124,7 +124,26 @@ export default function Blog() {
   return (
     <>
            <div className="ball" style={{ backgroundColor: 'rgba(255,0,0,1)', width: '96px', height: '96px', zIndex: '-1', position: 'fixed', top: '0', left: '0', borderRadius: '50%' }}>1</div>
-
+           <Helmet>
+           <title>{"Join "+ ` and  win `}</title>
+                 <meta name="twitter:title" content={ "Join "+ ` and win } Credits`}/>
+                 <meta name="twitter:image" content="https://cdn.kqed.org/wp-content/uploads/sites/2/2020/04/Passwurdz-800x514.jpg" />
+                 <meta name="twitter:card" content="summary_large_image" />
+                 <meta property="og:image:width" content="1200" />
+                 <meta property="og:image:height" content="630" />
+                 <meta property="og:image:alt" content="Challenge on Catoff" />
+                 <meta charSet="UTF-8" key="charset" />
+                 <meta
+                   name="viewport"
+                   content="width=device-width,initial-scale=1"
+                   key="viewport"
+                 />
+             <meta property="og:title" content={"Join " + ` and  win  `} />
+             <meta property="og:description" content={"Join " + ` and  win  `} />
+             <meta property="og:image" content={"https://cdn.kqed.org/wp-content/uploads/sites/2/2020/04/Passwurdz-800x514.jpg"} />
+             <meta property="og:url" content={`https://game.catoff.xyz/}`} />
+             <meta property="og:type" content="website" />
+           </Helmet>
     <div className="text-center font-bold mt-20">
 
     <div className='text-6xl max-sm:text-2xl  max-md:text-4xl text-green-400'>rahulol blogs ✍🏻</div>
