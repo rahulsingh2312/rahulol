@@ -1,28 +1,33 @@
 export const Data = [
     {
         index: '01',
+        color:"bg-[#917cea]",
+        title: "Catoff",
+        description: "Turn everyday activities into epic challenges! Challenges friends to dares, egnage in 1-on-duels or join global pools for endless fun.",
+        className: "top-0",
+        link:"https://catoff.xyz",
+        img:["/cat1.webp","/cat2.webp","/cat3.webp","/cat4.webp","/cat5.webp","/cat6.webp","/cat7.webp","/cat8.webp"]
+    },
+    {
+        index: '02',
+        color:"bg-[#6c968f]",
+        title: "PureBet",
+        description: "Purebet is built by a team passionate about revolutionizing sports betting through blockchain technology.",
+        className: "top-0",
+        link:"https://purebetv2.vercel.app",
+        img:["/pure1.webp","/pure2.webp","/pure3.webp","/pure4.webp"]
+    },
+    {
+        index: '03',
         color:"bg-[#FFCCCC]",
         title: "NutriSnap",
-        description: "Nutrisnap has an userbase of 6500+ users, One stop webapp for all your skincare and fitness goals and a scoreboard with all users on it",
+        description: "Nutrisnap has an userbase of 15,500+ users, One stop webapp for all your skincare and fitness goals and a scoreboard with all users on it",
         className: "top-0",
         link:"https://nutrisnap.vercel.app",
         img:["/nutri3.webp","/nutri5.webp","/nutri4.webp","/nutri1.webp","/nutri2.webp","/nutri6.webp","/nutri7.webp","/nutri8.webp","/nutri9.webp",]
     },
-    // FFCCCC
-    {
-        index: '02',
-        color:"bg-[#9d785d]",
-        title: "Invesnow.in",
-        link:"invesnow.in",
-        description: " a webapp to create an account from their demat accounts and then based on that Incorporated an AI-driven system to generate automated buy orders on their behalf.",
-        className:"top-0",
-        img:["/bull1.webp","/bull2.webp","/bull3.webp","/bull4.webp","/bull5.webp","/bull6.webp","/bull7.webp",],
-        
-        
-    },
-
    {
-        index: '03',
+        index: '04',
         color:"bg-[#5079b2]",
         title: "BetCrypt",
 link:"https://betcrypt-cw.vercel.app/",
@@ -30,8 +35,20 @@ link:"https://betcrypt-cw.vercel.app/",
         className:"top-0",
         img:["/bet1.webp","/bet2.webp","/bet3.webp","/bet4.webp","/bet5.webp","/bet6.webp",]
     },
+        // FFCCCC
+        {
+            index: '05',
+            color:"bg-[#9d785d]",
+            title: "Invesnow.in",
+            link:"https://invesnow.in",
+            description: " a webapp to create an account from their demat accounts and then based on that Incorporated an AI-driven system to generate automated buy orders on their behalf.",
+            className:"top-0",
+            img:["/bull1.webp","/bull2.webp","/bull3.webp","/bull4.webp","/bull5.webp","/bull6.webp","/bull7.webp",],
+            
+            
+        },
     {
-        index: '04',
+        index: '06',
         color:"bg-[#cdb4db]",
         title: "TedxTcet",
 link:"www.tedxtcet.com",
@@ -40,7 +57,7 @@ link:"www.tedxtcet.com",
         img:["/ted1.webp","/ted2.webp","/ted3.webp","/ted4.webp"]
     },
     {
-        index: '05',
+        index: '07',
         color:"bg-[#b3dee2]",
         title: "Font Lab",
             link: "https://font-lab.vercel.app",
@@ -49,7 +66,7 @@ link:"www.tedxtcet.com",
         img:["/font1.webp","/font2.webp","/font3.webp","/font4.webp","/font5.webp"]
     },
     {
-        index: '06',
+        index: '08',
         color:"bg-[#e77070]",
         title: "Random Song",
 link: "https://main--random-song-swiftie.netlify.app/",
@@ -58,7 +75,7 @@ link: "https://main--random-song-swiftie.netlify.app/",
         img:["/r1.webp","/r2.webp","/r3.webp"]
     },
     {
-        index: '07',
+        index: '09',
         color:"bg-[#b5bfa1]",
         title: "Glowup Essent.",
         link:"https://glowup.framer.ai/",

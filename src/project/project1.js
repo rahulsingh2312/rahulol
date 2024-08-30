@@ -129,7 +129,7 @@ export function Project1({Data}) {
           <div className={`flex items-center `}>
             <div>{Data.index}</div> &nbsp;&nbsp;&nbsp;----- &nbsp;&nbsp;&nbsp;
             {/* <div className="w-[50px] h-[1px] bg-white mx-2">-</div> */}
-            <div>07</div>
+            <div>09</div>
           </div>
           <div className="font-black text-3xl hidden md:block">PROJECTS</div>
         </motion.div>
