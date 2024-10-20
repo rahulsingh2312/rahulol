@@ -1,16 +1,18 @@
-import  { useEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function Practicals() {
   useEffect(() => {
     const handleDownload = () => {
-      // Replace 'YOUR_GOOGLE_DRIVE_LINK' with your actual Google Drive link
-      const googleDriveLink = 'https://drive.google.com/file/d/11ZFh8bT1vJvfg_naQB0Bm_YKI-G-yk3Z/view?usp=sharing';
+      // Replace 'YOUR_FILE_URL' with the URL of the file you want to download
+      const fileUrl = '/tcet.zip';
+      // Specify the filename for the downloaded file
+      const filename = 'tchigherstudies.zip';
       // Create an anchor element
       const link = document.createElement('a');
-      // Set the href attribute to the Google Drive link
-      link.href = googleDriveLink;
-      // Add the download attribute to trigger download
-      link.setAttribute('download', '');
+      // Set the href attribute to the file URL
+      link.href = fileUrl;
+      // Set the download attribute to the desired filename
+      link.setAttribute('download', filename);
       // Simulate a click event on the anchor element
       document.body.appendChild(link);
       link.click();
@@ -21,5 +23,6 @@ export default function Practicals() {
     handleDownload(); // Call handleDownload when component mounts
   }, []); // Empty dependency array ensures this effect runs only once after the component mounts
 
-  return null; // Render nothing
+  return(<><div>hi , have a nice day</div></>) 
+   // Render nothing
 }

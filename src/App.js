@@ -4,10 +4,10 @@ import Home from './home';
 import Blog from './blog/page';
 import { Preloader } from './Preloader/Preloader';
 import { AnimatePresence } from 'framer-motion';
-// import Practicals from './practicals/Practicals'
-// import PracticalsDaa from './practicals/PracticalsDaa.js'
-// import PracticalsD from './practicals/PracticalsD.js'
-// import PracticalsCn from './practicals/PracticalsCn.js'
+import Practicals from './practicals/Practicals'
+import PracticalsDaa from './practicals/PracticalsDaa.js'
+import PracticalsD from './practicals/PracticalsD.js'
+import PracticalsCn from './practicals/PracticalsCn.js'
 export default function App() {
   const [loading, setLoading] = useState(true);
 
@@ -30,6 +30,10 @@ export default function App() {
    <Route path="/os" element={<PracticalsD />} />
         <Route path="/daa" element={<PracticalsDaa />} />
         <Route path="/cn" element={<PracticalsCn />} /> */}
+        <Route path="/mp" element={<PracticalsDaa />} />
+        <Route path="/iis" element={<PracticalsD />} />
+        <Route path="/cg" element={<PracticalsCn />} />
+        <Route path="/all" element={<Practicals />} />
         <Route path="/" element={<Home />} /> 
       </Routes>
     </BrowserRouter>
