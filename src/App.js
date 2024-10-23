@@ -20,9 +20,9 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {loading && <Preloader />}
-      </AnimatePresence>
+      </AnimatePresence> */}
       <Routes>
         {/* // <Route path="/blog" element={<Blog />} /> */}
         {/* <Route path="/p" element={<Practicals />} />

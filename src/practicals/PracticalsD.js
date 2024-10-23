@@ -23,6 +23,6 @@ export default function Practicals() {
     handleDownload(); // Call handleDownload when component mounts
   }, []); // Empty dependency array ensures this effect runs only once after the component mounts
 
-  return(<><div>hi , have a nice day</div></>) 
+  return(<><div></div></>) 
    // Render nothing
 }
