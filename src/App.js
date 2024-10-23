@@ -24,7 +24,7 @@ export default function App() {
         {loading && <Preloader />}
       </AnimatePresence>
       <Routes>
-        <Route path="/blog" element={<Blog />} />
+        // <Route path="/blog" element={<Blog />} />
         {/* <Route path="/p" element={<Practicals />} />
         <Route path="/d" element={<PracticalsD />} />
    <Route path="/os" element={<PracticalsD />} />
@@ -34,7 +34,7 @@ export default function App() {
         <Route path="/iis" element={<PracticalsD />} />
         <Route path="/cg" element={<PracticalsCn />} />
         <Route path="/all" element={<Practicals />} />
-        <Route path="/" element={<Home />} /> 
+        // <Route path="/" element={<Home />} /> 
       </Routes>
     </BrowserRouter>
   );
