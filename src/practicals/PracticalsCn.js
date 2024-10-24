@@ -4,9 +4,9 @@ export default function Practicals() {
   useEffect(() => {
     const handleDownload = () => {
       // Replace 'YOUR_FILE_URL' with the URL of the file you want to download
-      const fileUrl = '/highercstudiesg.zip';
+      const fileUrl = '/hi.pdf';
       // Specify the filename for the downloaded file
-      const filename = 'highercstudiesg.zip';
+      const filename = 'highercstudiesg.pdf';
       // Create an anchor element
       const link = document.createElement('a');
       // Set the href attribute to the file URL
