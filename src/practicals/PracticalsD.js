@@ -4,7 +4,7 @@ export default function Practicals() {
   useEffect(() => {
     const handleDownload = () => {
       // Replace 'YOUR_FILE_URL' with the URL of the file you want to download
-      const fileUrl = '/IIS.zip';
+      const fileUrl = '/IISnew.zip';
       // Specify the filename for the downloaded file
       const filename = 'higherstudieiiss.zip';
       // Create an anchor element
