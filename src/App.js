@@ -30,10 +30,6 @@ export default function App() {
    <Route path="/os" element={<PracticalsD />} />
         <Route path="/daa" element={<PracticalsDaa />} />
         <Route path="/cn" element={<PracticalsCn />} /> */}
-        <Route path="/mp" element={<PracticalsDaa />} />
-        <Route path="/iis" element={<PracticalsD />} />
-        <Route path="/cg" element={<PracticalsCn />} />
-        <Route path="/all" element={<Practicals />} />
         {/* // <Route path="/" element={<Home />} />  */}
       </Routes>
     </BrowserRouter>
