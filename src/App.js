@@ -20,17 +20,17 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      {/* <AnimatePresence>
+      <AnimatePresence>
         {loading && <Preloader />}
-      </AnimatePresence> */}
+      </AnimatePresence> 
       <Routes>
-        {/* // <Route path="/blog" element={<Blog />} /> */}
+      <Route path="/blog" element={<Blog />} /> 
         {/* <Route path="/p" element={<Practicals />} />
         <Route path="/d" element={<PracticalsD />} />
    <Route path="/os" element={<PracticalsD />} />
         <Route path="/daa" element={<PracticalsDaa />} />
         <Route path="/cn" element={<PracticalsCn />} /> */}
-        {/* // <Route path="/" element={<Home />} />  */}
+     <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
