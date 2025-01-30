@@ -210,11 +210,12 @@ export default function Page() {
             </li>
           </ul>
         </section>
-
-        <section className="flex justify-center items-center">
+        <section className="md:mt-0 mt-10 flex md:text-sm text-xs text-gray-400 justify-center items-center">
           made with 🤍 by rahul
         </section>
+        
       </main>
+    
     </div>
   );
 }
