@@ -106,35 +106,7 @@ export default function Page() {
           ))}
         </ul>
       </section>
-    </div>
-  </div>
-</div>
-  <section className="mb-5 md:hidden md:mb-16">
-        <h2 className="md:text-sm text-xs  text-gray-400 mb-3">
-        Projects</h2>
-          <ul className="space-y-4 md:text-sm text-xs text-gray-600">
-            {[
-              { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data "  , link :"https://solanarewind.fun/"},
-              { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash"  , link :"https://sickfreak.club/"},
-              { name: "Nutrisnap", desc: "Know about your food from just a snap" , link:"https://nutrisnap.tech" },
-              { name: "yen.fyi ", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts " , link: "https://yen.fyi" },
-              { name: "Purebet", desc: "Onchain sports betting app" , link: "https://purebetv2.vercel.app/" },
-              { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens " , link : "https://emojibuy.fun" },
-              { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link : "https://dbascoin.vercel.app/"  },
-            ].map((project) => (
-              <li key={project.name}>
-                <a target="_blank" href={project.link} className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
-                {project.name}
-                  <ArrowUpRight className="w-4 h-4 ml-0.5" />
-                </a>
-                <span className="ml-1">{project.desc}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      
-
-        <section className="mb-5 md:mt-0 mt-14 md:mb-16">
+      <section className="mb-5 md:mt-14 hidden md:block md:mb-16">
         <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Connect</h2>
         <ul className="space-y-3 md:text-sm text-xs text-gray-600">
             <li>
@@ -171,6 +143,76 @@ export default function Page() {
               {" (rahulsinghhh2312@gmail.com)"}
             </li>
           </ul>
+        </section>
+    </div>
+  </div>
+</div>
+  <section className="mb-5 md:hidden md:mb-16">
+        <h2 className="md:text-sm text-xs  text-gray-400 mb-3">
+        Projects</h2>
+          <ul className="space-y-4 md:text-sm text-xs text-gray-600">
+            {[
+              { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data "  , link :"https://solanarewind.fun/"},
+              { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash"  , link :"https://sickfreak.club/"},
+              { name: "Nutrisnap", desc: "Know about your food from just a snap" , link:"https://nutrisnap.tech" },
+              { name: "yen.fyi ", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts " , link: "https://yen.fyi" },
+              { name: "Purebet", desc: "Onchain sports betting app" , link: "https://purebetv2.vercel.app/" },
+              { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens " , link : "https://emojibuy.fun" },
+              { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link : "https://dbascoin.vercel.app/"  },
+            ].map((project) => (
+              <li key={project.name}>
+                <a target="_blank" href={project.link} className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                {project.name}
+                  <ArrowUpRight className="w-4 h-4 ml-0.5" />
+                </a>
+                <span className="ml-1">{project.desc}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      
+
+        <section className="mb-5 md:hidden md:mt-0 mt-14 md:mb-16">
+        <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Connect</h2>
+        <ul className="space-y-3 md:text-sm text-xs text-gray-600">
+            <li>
+              <a
+               target="_blank"
+                href="https://twitter.com/rrahulol"
+                className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
+              >
+                Twitter <Twitter className="w-4 h-4 ml-0.5" />
+                <ArrowUpRight className="w-4 h-4 ml-0.5" />
+              </a>
+              {" & "}
+              <a
+               target="_blank"
+                href="https://instagram.com/rrahulol"
+                className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
+              >
+                Instagram 
+                <Instagram  className="w-4 h-4 ml-0.5"/>
+                <ArrowUpRight className="w-4 h-4 ml-0.5" />
+              </a>
+              {" (@rrahulol)"}
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/rahulsingh2312" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                Github <Github className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
+              </a>
+              {" (@rahulsingh2312)"}
+            </li>
+            <li>
+              <a href="mailto:rahulsinghhh2312@gmail.com" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                Email <Mail  className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
+              </a>
+              {" (rahulsinghhh2312@gmail.com)"}
+            </li>
+          </ul>
+        </section>
+
+        <section className="flex justify-center items-center">
+          made with 🤍 by rahul
         </section>
       </main>
     </div>
