@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import WeatherWidget from "./components/weather-widget";
 import { Tooltip } from "./components/tooltip.js"; // Assuming you have a Tooltip component
+import { Github , Twitter , Instagram ,Mail } from 'lucide-react';
 
 export default function Page() {
   return (
@@ -26,8 +27,8 @@ export default function Page() {
             <section className="mb-16">
               <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Summary</h2>
               <ul className="space-y-4 md:text-sm text-xs text-gray-600">
-                <li>20 year old developer & day trader ( i trade memecoins ) </li>
-                <li>Computer science engineer, tortured artist </li>
+                <li>20 year old developer & Hype Cycle Quant, strategically navigating liquidity in multiple internet based assests ( i trade memecoins ) </li>
+                <li>Computer science engineer & tortured artist </li>
                 <li>
                 Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> catoff gaming </a>, <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch </a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech </a>, 3x Hackathon Winner
                 </li>
@@ -84,20 +85,20 @@ export default function Page() {
       </p>
     </Tooltip>
     </a>
-    <div className="md:mt-12 -ml-28 md:ml-0 mt-6 md:w-2/3 text-left ">
+    <div className="md:mt-12 text-right  md:ml-0 mt-6 md:w-2/3 md:text-left ">
       <section>
       <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Writings</h2>
       <ul className="space-y-3">
           {[
-            { date: "15.1.25", title: "UBI Using Crypto Powered Ai agents" , link :"https://medium.com/@rahulsinghhh2312/enabling-universal-basic-income-through-crypto-powered-ai-agents-ed65f1eb377d" },
-            { date: "24.8.24", title: "Infra Providers Fu*king you over", link:"https://medium.com/@rahulsinghhh2312/stop-using-nextjs-before-its-too-late-13c35f5b076f" },
+            { date: "15/01/25", title: "UBI Using Crypto Powered Ai agents" , link :"https://medium.com/@rahulsinghhh2312/enabling-universal-basic-income-through-crypto-powered-ai-agents-ed65f1eb377d" },
+            { date: "29/08/24", title: "Infra Providers Fu*king you over", link:"https://medium.com/@rahulsinghhh2312/stop-using-nextjs-before-its-too-late-13c35f5b076f" },
             // { date: "23.9.23", title: "Catching Up With The Boys" },
             // { date: "27.6.23", title: "The Problem with AI Apps" },
             // { date: "8.12.22", title: "Why Siri Sucks" },
             // { date: "22.5.22", title: "Solving the Web3 UX Problem" },
           ].map((post) => (
             <li className="md:text-sm text-xs" key={post.title}>
-              <span className="text-gray-500">{post.date}</span>{" "}
+              <span className="text-gray-500">{post.date}</span>{" "}{" "}
               <a target="_blank" href={post.link} className="text-gray-900 underline hover:text-gray-600">
                 {post.title}
               </a>
@@ -142,7 +143,7 @@ export default function Page() {
                 href="https://twitter.com/rrahulol"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
-                Twitter
+                Twitter <Twitter className="w-4 h-4 ml-0.5" />
                 <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" & "}
@@ -151,20 +152,21 @@ export default function Page() {
                 href="https://instagram.com/rrahulol"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
-                Instagram
+                Instagram 
+                <Instagram  className="w-4 h-4 ml-0.5"/>
                 <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (@rrahulol)"}
             </li>
             <li>
-              <a target="_blank" href="https://github.com/rahulsingh2312" className="text-gray-900 underline hover:text-gray-600">
-                Github
+              <a target="_blank" href="https://github.com/rahulsingh2312" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                Github <Github className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (@rahulsingh2312)"}
             </li>
             <li>
-              <a href="mailto:rahulsinghhh2312@gmail.com" className="text-gray-900 underline hover:text-gray-600">
-                Email
+              <a href="mailto:rahulsinghhh2312@gmail.com" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                Email <Mail  className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (rahulsinghhh2312@gmail.com)"}
             </li>
