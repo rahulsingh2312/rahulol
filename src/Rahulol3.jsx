@@ -27,7 +27,7 @@ export default function Page() {
             <section className="mb-16">
               <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Summary</h2>
               <ul className="space-y-4 md:text-sm text-xs text-gray-600">
-                <li>20 year old developer & Hype Cycle Quant, strategically navigating liquidity in multiple internet based assets ( i trade memecoins ) </li>
+                <li>20 year old developer & quant in internet based assets ( i trade memecoins ) </li>
                 <li>Computer science engineer & tortured artist </li>
                 <li>
                 Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> catoff gaming </a>, <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch </a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech </a>, 3x Hackathon Winner
