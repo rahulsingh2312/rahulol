@@ -72,7 +72,7 @@ export default function Page() {
 {/* Right Section */}
 <div className="w-[90%] mx-auto md:w-1/2 shrink-0 order-first md:order-last flex flex-col items-center">
     <img
-      src="https://pbs.twimg.com/profile_images/1869389471743123456/Kc9p1qy2_400x400.jpg"
+      src="https://pbs.twimg.com/profile_images/1889328884463685632/Ll2Lbero_400x400.jpg"
       alt="Profile photo at a gathering"
       width={360}
       height={360}
