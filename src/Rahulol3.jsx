@@ -154,7 +154,7 @@ export default function Page() {
             {[
               { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data "  , link :"https://solanarewind.fun/"},
               { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash"  , link :"https://sickfreak.club/"},
-              { name: "Nutrisnap", desc: "Know about your food from just a snap" , link:"https://nutrisnap.tech" },
+              { name: "Nutrisnap", desc: "Know about your food from just a snap" , link:"https://nutrisnapai2.vercel.app" },
               { name: "yen.fyi ", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts " , link: "https://yen.fyi" },
               { name: "Purebet", desc: "Onchain sports betting app" , link: "https://purebetv2.vercel.app/" },
               { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens " , link : "https://emojibuy.fun" },
