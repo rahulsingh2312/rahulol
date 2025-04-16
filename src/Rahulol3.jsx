@@ -32,7 +32,7 @@ export default function Page() {
                 <li>
                 Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> catoff gaming </a>, <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch </a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech </a>, 3x Hackathon Winner
                 </li>
-                <li>Previously Co-Founded <a className="underline" href="https://nutrisnap.tech/" target="_blank">nutrisnap</a> 25k+ users, 3mil+ views on <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">socials</a> </li>
+                <li>Previously Co-Founded <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">nutrisnap</a> 25k+ users, 3mil+ views on <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">socials</a> </li>
                 {/* <li>Currently trying to transition from selling time to starting my own companies</li> */}
                 <li>Currently trying to make impact with my code</li>
                 <li>
@@ -49,9 +49,9 @@ export default function Page() {
         Projects</h2>
           <ul className="space-y-4 md:text-sm text-xs text-gray-600">
             {[
-              { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data "  , link :"https://solanarewind.fun/"},
+              { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data "  , link :"https://x.com/SolanaRewindAI/"},
               { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash"  , link :"https://sickfreak.club/"},
-              { name: "Nutrisnap", desc: "Know about your food from just a snap" , link:"https://nutrisnap.tech" },
+              { name: "Nutrisnap", desc: "Know about your food from just a snap" , link:"https://www.instagram.com/nutrisnap.ai/" },
               { name: "Purebet", desc: "Onchain sports betting app" , link: "https://purebetv2.vercel.app/" },
               { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens " , link : "https://emojibuy.fun" },
               { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link : "https://dbascoin.vercel.app/"  },
@@ -86,10 +86,31 @@ export default function Page() {
     </Tooltip>
     </a>
     <div className="md:mt-12 text-right  md:ml-0 mt-6 md:w-2/3 md:text-left ">
-      <section>
-      <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Writings</h2>
+    <section>
+      <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Talks</h2>
       <ul className="space-y-3">
           {[
+            { date: "07/04/25", title: "Solana, Magic Internet Money" , link :"https://x.com/rrahulol/status/1912528508380668030" },
+            // { date: "29/08/24", title: "Infra Providers Fu*king you over", link:"https://medium.com/@rahulsinghhh2312/stop-using-nextjs-before-its-too-late-13c35f5b076f" },
+            // { date: "23.9.23", title: "Catching Up With The Boys" },
+            // { date: "27.6.23", title: "The Problem with AI Apps" },
+            // { date: "8.12.22", title: "Why Siri Sucks" },
+            // { date: "22.5.22", title: "Solving the Web3 UX Problem" },
+          ].map((post) => (
+            <li className="md:text-sm text-xs" key={post.title}>
+              <span className="text-gray-500">{post.date}</span>{" "}{" "}
+              <a target="_blank" href={post.link} className="text-gray-900 underline hover:text-gray-600">
+                {post.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section>
+      <h2 className="md:text-sm text-xs  mt-5 text-gray-400 mb-3">Writings</h2>
+      <ul className="space-y-3">
+          {[
+            { date: "16/04/25", title: "Spam to Scams"  , link :"https://medium.com/@rahulsinghhh2312/spam-to-scams-dirty-dev-tricks-with-dusting-address-poisoning-on-solana-27a1c30a8325"},
             { date: "15/01/25", title: "UBI Using Crypto Powered Ai agents" , link :"https://medium.com/@rahulsinghhh2312/enabling-universal-basic-income-through-crypto-powered-ai-agents-ed65f1eb377d" },
             { date: "29/08/24", title: "Infra Providers Fu*king you over", link:"https://medium.com/@rahulsinghhh2312/stop-using-nextjs-before-its-too-late-13c35f5b076f" },
             // { date: "23.9.23", title: "Catching Up With The Boys" },
