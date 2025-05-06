@@ -30,7 +30,7 @@ export default function Page() {
                 <li>20 year old developer & quant in internet based assets ( i trade memecoins ) </li>
                 <li>Computer science engineer & tortured artist </li>
                 <li>
-                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> catoff gaming </a>, <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch </a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech </a>, 3x Hackathon Winner
+                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> catoff gaming </a>, <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch </a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech </a>, 4x Hackathon Winner
                 </li>
                 <li>Previously Co-Founded <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">nutrisnap</a> 25k+ users, 3mil+ views on <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">socials</a> </li>
                 {/* <li>Currently trying to transition from selling time to starting my own companies</li> */}
