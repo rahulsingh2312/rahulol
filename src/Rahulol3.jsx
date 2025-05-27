@@ -72,7 +72,7 @@ export default function Page() {
 {/* Right Section */}
 <div className="w-[90%] mx-auto md:w-1/2 shrink-0 order-first md:order-last flex flex-col items-center">
     <img
-      src="/rahl.png"
+      src="/rahul1.png"
       alt="Profile photo at a gathering"
       width={360}
       height={360}
