@@ -34,7 +34,7 @@ export default function WeatherWidget({ city, country }) {
         const currentTime = now.toLocaleTimeString("en-US", {
           hour: "2-digit",
           minute: "2-digit",
-          timeZone: "Pacific/Honolulu",
+          timeZone: "Asia/Kolkata",
         });
 
         const isNight = now >= new Date(data.sys.sunset * 1000) || now <= new Date(data.sys.sunrise * 1000);

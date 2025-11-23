@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Linkedin } from "lucide-react";
 import WeatherWidget from "./components/weather-widget";
 import { Tooltip } from "./components/tooltip.js"; // Assuming you have a Tooltip component
 import { Github , Twitter , Instagram ,Mail } from 'lucide-react';
@@ -17,21 +17,33 @@ export default function Page() {
             <h1 className="md:text-3xl text-2xl my-2 text-gray-500 font-semibold hover:text-gray-600 transition-colors">
               rrahulol
             </h1>
-            <WeatherWidget city="Hawaii" country="US" />
+            <WeatherWidget city="Mumbai" country="IN" />
           </a>
         </header>
         <p className="text-gray-600 text-xs md:text-sm my-5 md:mb-16">
-             Hi i'm rahul i build internet companies for .fun This is where i document my journey.
+             Hi i'm rahul i help in building internet companies for .fun This is where i document my journey.
             </p>
 
             <section className="mb-16">
               <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Summary</h2>
               <ul className="space-y-4 md:text-sm text-xs text-gray-600">
-                <li>20 year old developer & quant in internet based assets ( i trade memecoins ) </li>
+                <li>20 year old developer & quant for internet based assets. </li>
                 <li>Computer science engineer & tortured artist </li>
                 <li>
-                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> catoff gaming </a>, <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch </a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech </a>, 4x Hackathon Winner
+                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> Catoff gaming as React Native Dev, </a> <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch as Solana Dev</a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech as FullStack Dev</a>, 4x Hackathon Winner.
                 </li>
+               <li>
+                <a className="underline" href="https://superteam.fun/" target="_blank"> 
+               SuperteamIN Member.
+               </a>
+               </li>
+               <li>
+              
+               Was #1 on   <a className="underline" href="https://gmgn.ai/" target="_blank"> 
+              GMGN.ai
+               </a> PnL Leaderboard. 
+               
+               </li>
                 <li>Previously Co-Founded <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">nutrisnap</a> 25k+ users, 3mil+ views on <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">socials</a> </li>
                 {/* <li>Currently trying to transition from selling time to starting my own companies</li> */}
                 <li>Currently trying to make impact with my code</li>
@@ -45,43 +57,54 @@ export default function Page() {
               </ul>
             </section>
             <section className="mb-5 md:block hidden md:mb-16">
-        <h2 className="md:text-sm text-xs  text-gray-400 mb-3">
-        Projects</h2>
-          <ul className="space-y-4 md:text-sm text-xs text-gray-600">
-            {[
-              { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data "  , link :"https://x.com/SolanaRewindAI/"},
-              { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash"  , link :"https://sickfreak.club/"},
-              { name: "Nutrisnap", desc: "Know about your food from just a snap" , link:"https://www.instagram.com/nutrisnap.ai/" },
-              { name: "Purebet", desc: "Onchain sports betting app" , link: "https://purebetv2.vercel.app/" },
-              { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens " , link : "https://emojibuy.fun" },
-              { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link : "https://dbascoin.vercel.app/"  },
-            ].map((project) => (
-              <li key={project.name}>
-                <a target="_blank" href={project.link} className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
-                  {project.name}
-                  <ArrowUpRight className="w-4 h-4 ml-0.5" />
-                </a>
-                <span className="ml-1">{project.desc}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+  <h2 className="md:text-sm text-xs text-gray-400 mb-3">Projects</h2>
+  <ul className="space-y-4 md:text-sm text-xs text-gray-600">
+    {[
+      { name: "Mytakes.fun", desc: "Live on Solana Dapp store, pumpfun x polymarket two way markets", link: "https://x.com/takes_mobile/status/1958976229425782935", date: "2025" },
+      { name: "Cookchat.fun", desc: "Token Gated Chat for all meme tokens, only accessible if u hold 0.1 sol worth of it.", link: "https://cookchat.fun", date: "2025" },
+      { name: "Lottos.wtf", desc: "Launchpad but for lotteries live on mainnet", link: "https://lottos.wtf", date: "2025" },
+      // { name: "Wealthify", desc: "App to Analyze assets, reduce liabilities, and find tailored investment opportunities", link: "https://www.thewealthify.me/", date: "2024" },
+      { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data", link: "https://solanarewind.fun/", date: "2024" },
+      { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash", link: "https://sickfreak.club/", date: "2024" },
+      { name: "Nutrisnap", desc: "Know about your food from just a snap", link: "https://nutrisnapai2.vercel.app", date: "2023–24" },
+      { name: "yen.fyi", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts", link: "https://yen.fyi", date: "2024" },
+      { name: "Purebet", desc: "Onchain sports betting app", link: "https://purebetv2.vercel.app/", date: "2024" },
+      { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens", link: "https://emojibuy.fun", date: "2024" },
+      { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link: "https://dbascoin.vercel.app/", date: "2023" },
+      ].map((project) => (
+      <li key={project.name}>
+        <a
+          target="_blank"
+          href={project.link}
+          className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
+        >
+          {project.name}
+        
+          <ArrowUpRight className="w-4 h-4 ml-0.5" />
+        </a>
+        <span className="text-gray-400 ml-1 ">· {project.date} · </span>
+        <span className="ml-1">{project.desc}</span>
+      </li>
+    ))}
+  </ul>
+</section>
+
       
 
           </div>
 {/* Right Section */}
 <div className="w-[90%] mx-auto md:w-1/2 shrink-0 order-first md:order-last flex flex-col items-center">
     <img
-      src="/rahul2.png"
+      src="/stra.jpg"
       alt="Profile photo at a gathering"
       width={360}
       height={360}
       className="mb-6 md:mb-0"
     />
-    <a href="https://solscan.io/account/rAhULHBrf2yGuANDuAGLuUTKuLCW17t86T8T6vGcuok" target="_blank">
+    <a href="https://solscan.io/account/GkbaZj4r9NcCs6Droq6kbJwvP5gqfeSdSSMCxQuZxTcm" target="_blank">
     <Tooltip content="Track Rahul onchain">
       <p className="md:text-sm text-xs mt- md:mt-6 text-gray-400 hover:text-gray-500 transition-colors cursor-pointer text-center">
-        rAhULHBrf2yGuANDuAGLuUTKuLCW17t86T8T6vGcuok
+        GkbaZj4r9NcCs6Droq6kbJwvP5gqfeSdSSMCxQuZxTcm
       </p>
     </Tooltip>
     </a>
@@ -158,6 +181,12 @@ export default function Page() {
               {" (@rahulsingh2312)"}
             </li>
             <li>
+              <a target="_blank" href="https://www.linkedin.com/in/rahulsinghhh2312/" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                Linked <Linkedin className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
+              </a>
+              {" (@rahulsinghhh2312)"}
+            </li>
+            <li>
               <a href="mailto:rahulsinghhh2312@gmail.com" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 Email <Mail  className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
@@ -173,19 +202,25 @@ export default function Page() {
         Projects</h2>
           <ul className="space-y-4 md:text-sm text-xs text-gray-600">
             {[
-              { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data "  , link :"https://solanarewind.fun/"},
-              { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash"  , link :"https://sickfreak.club/"},
-              { name: "Nutrisnap", desc: "Know about your food from just a snap" , link:"https://nutrisnapai2.vercel.app" },
-              { name: "yen.fyi ", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts " , link: "https://yen.fyi" },
-              { name: "Purebet", desc: "Onchain sports betting app" , link: "https://purebetv2.vercel.app/" },
-              { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens " , link : "https://emojibuy.fun" },
-              { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link : "https://dbascoin.vercel.app/"  },
-            ].map((project) => (
+            { name: "Mytakes.fun", desc: "Live on Solana Dapp store, pumpfun x polymarket two way markets", link: "https://x.com/takes_mobile/status/1958976229425782935", date: "2025" },
+            { name: "Cookchat.fun", desc: "Token Gated Chat for all meme tokens, only accessible if u hold 0.1 sol worth of it.", link: "https://cookchat.fun", date: "2025" },
+            { name: "Lottos.wtf", desc: "Launchpad but for lotteries live on mainnet", link: "https://lottos.wtf", date: "2025" },
+            // { name: "Wealthify", desc: "App to Analyze assets, reduce liabilities, and find tailored investment opportunities", link: "https://www.thewealthify.me/", date: "2024" },
+
+            { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data", link: "https://solanarewind.fun/", date: "2024" },
+            { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash", link: "https://sickfreak.club/", date: "2024" },
+            { name: "Nutrisnap", desc: "Know about your food from just a snap", link: "https://nutrisnapai2.vercel.app", date: "2023–24" },
+            { name: "yen.fyi", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts", link: "https://yen.fyi", date: "2024" },
+            { name: "Purebet", desc: "Onchain sports betting app", link: "https://purebetv2.vercel.app/", date: "2024" },
+            { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens", link: "https://emojibuy.fun", date: "2024" },
+            { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link: "https://dbascoin.vercel.app/", date: "2023" },
+              ].map((project) => (
               <li key={project.name}>
                 <a target="_blank" href={project.link} className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 {project.name}
                   <ArrowUpRight className="w-4 h-4 ml-0.5" />
                 </a>
+                <span className="text-gray-400 ml-1">· {project.date} · </span>
                 <span className="ml-1">{project.desc}</span>
               </li>
             ))}
@@ -222,6 +257,12 @@ export default function Page() {
                 Github <Github className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (@rahulsingh2312)"}
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/rahulsinghhh2312/" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                Linked <Linkedin className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
+              </a>
+              {" (@rahulsinghhh2312)"}
             </li>
             <li>
               <a href="mailto:rahulsinghhh2312@gmail.com" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
