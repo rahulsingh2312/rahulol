@@ -30,29 +30,29 @@ export default function Page() {
               <ul className="space-y-4 md:text-sm text-xs text-gray-600">
                 <li><span className="font-medium text-gray-900">21</span> year old <em>developer & quant</em> for internet based assets. </li>
                 <li>
-                Was <span className="font-medium text-gray-900">#1</span> on   <a className="underline" href="https://gmgn.ai/" target="_blank">
+                Was <span className="font-medium text-gray-900">#1</span> on   <a className="underline" href="https://gmgn.ai/" target="_blank" rel="noreferrer">
               GMGN.ai
                </a> <span className="font-medium text-gray-900">PnL Leaderboard</span>.
 
                </li>
                 <li>
-                <em>Quant & FullStack Dev</em> at <a className="underline" href="https://x.com/insidersdotbot" target="_blank">Insiders.bot</a>, built a real-time Polymarket trading system <span className="font-medium text-gray-900">10-20s faster</span> than Polymarket itself, driving <span className="font-medium text-gray-900">$1.3M+</span> in volume.
+                <em>Quant & FullStack Dev</em> at <a className="underline" href="https://x.com/insidersdotbot" target="_blank" rel="noreferrer">Insiders.bot</a>, built a real-time Polymarket trading system <span className="font-medium text-gray-900">10-20s faster</span> than Polymarket itself, driving <span className="font-medium text-gray-900">$1.3M+</span> in volume.
                 </li>
                 <li>Computer science engineer & <em>tortured artist</em> </li>
                 <li>
-                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> Catoff gaming as <em>React Native Dev</em>, </a> <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch as <em>Solana Dev</em></a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech as <em>FullStack Dev</em></a>, <span className="font-medium text-gray-900">4x Hackathon Winner</span>.
+                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank" rel="noreferrer"> Catoff gaming as <em>React Native Dev</em>, </a> <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank" rel="noreferrer"> Chain Launch as <em>Solana Dev</em></a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank" rel="noreferrer"> Vighnotech as <em>FullStack Dev</em></a>, <span className="font-medium text-gray-900">4x Hackathon Winner</span>.
                 </li>
                <li>
-                <a className="underline" href="https://superteam.fun/" target="_blank">
+                <a className="underline" href="https://superteam.fun/" target="_blank" rel="noreferrer">
                SuperteamIN Member.
                </a>
                </li>
-                <li>Previously Co-Founded <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">nutrisnap</a> <span className="font-medium text-gray-900">25k+ users, 3mil+ views</span> on <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">socials</a> </li>
+                <li>Previously Co-Founded <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank" rel="noreferrer">nutrisnap</a> <span className="font-medium text-gray-900">25k+ users, 3mil+ views</span> on <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank" rel="noreferrer">socials</a> </li>
                 {/* <li>Currently trying to transition from selling time to starting my own companies</li> */}
                 <li>Currently trying to make impact with my code</li>
                 <li>
                   I write about my life on {" "}
-                  <a href="https://x.com/rahu1o1" target="_blank" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                  <a href="https://x.com/rahu1o1" target="_blank" rel="noreferrer" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                     Twitter || X
                     <ArrowUpRight className="w-4 h-4 ml-0.5" />
                   </a>
@@ -80,7 +80,7 @@ export default function Page() {
       ].map((project) => (
       <li key={project.name}>
         <a
-          target="_blank"
+          target="_blank" rel="noreferrer"
           href={project.link}
           className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
         >
@@ -107,7 +107,7 @@ export default function Page() {
       height={360}
       className="mb-6 md:mb-0"
     />
-    <a href="https://solscan.io/account/rAhULHBrf2yGuANDuAGLuUTKuLCW17t86T8T6vGcuok" target="_blank">
+    <a href="https://solscan.io/account/rAhULHBrf2yGuANDuAGLuUTKuLCW17t86T8T6vGcuok" target="_blank" rel="noreferrer">
     <Tooltip content="Track Rahul onchain">
       <p className="md:text-sm text-xs mt- md:mt-6 text-gray-400 hover:text-gray-500 transition-colors cursor-pointer text-center">
         rAhULHBrf2yGuANDuAGLuUTKuLCW17t86T8T6vGcuok
@@ -128,7 +128,7 @@ export default function Page() {
           ].map((post) => (
             <li className="md:text-sm text-xs" key={post.title}>
               <span className="text-gray-500">{post.date}</span>{" "}{" "}
-              <a target="_blank" href={post.link} className="text-gray-900 underline hover:text-gray-600">
+              <a target="_blank" rel="noreferrer" href={post.link} className="text-gray-900 underline hover:text-gray-600">
                 {post.title}
               </a>
             </li>
@@ -149,7 +149,7 @@ export default function Page() {
           ].map((post) => (
             <li className="md:text-sm text-xs" key={post.title}>
               <span className="text-gray-500">{post.date}</span>{" "}{" "}
-              <a target="_blank" href={post.link} className="text-gray-900 underline hover:text-gray-600">
+              <a target="_blank" rel="noreferrer" href={post.link} className="text-gray-900 underline hover:text-gray-600">
                 {post.title}
               </a>
             </li>
@@ -161,7 +161,7 @@ export default function Page() {
         <ul className="space-y-3 md:text-sm text-xs text-gray-600">
             <li>
               <a
-               target="_blank"
+               target="_blank" rel="noreferrer"
                 href="https://twitter.com/rahu1o1"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
@@ -170,7 +170,7 @@ export default function Page() {
               </a>
               {" (@rahu1o1) & "}
               <a
-               target="_blank"
+               target="_blank" rel="noreferrer"
                 href="https://instagram.com/r4hu1ok"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
@@ -181,19 +181,19 @@ export default function Page() {
               {" (@r4hu1ok)"}
             </li>
             <li>
-              <a target="_blank" href="https://t.me/r4hu1k" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+              <a target="_blank" rel="noreferrer" href="https://t.me/r4hu1k" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 Telegram <FaTelegramPlane className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (@r4hu1k)"}
             </li>
             <li>
-              <a target="_blank" href="https://github.com/rahulsingh2312" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+              <a target="_blank" rel="noreferrer" href="https://github.com/rahulsingh2312" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 Github <Github className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (@rahulsingh2312)"}
             </li>
             <li>
-              <a target="_blank" href="https://www.linkedin.com/in/rahulsinghhh2312/" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/rahulsinghhh2312/" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 Linked <Linkedin className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (@rahulsinghhh2312)"}
@@ -231,7 +231,7 @@ export default function Page() {
             { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link: "https://dbascoin.vercel.app/", date: "2023" },
               ].map((project) => (
               <li key={project.name}>
-                <a target="_blank" href={project.link} className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                <a target="_blank" rel="noreferrer" href={project.link} className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 {project.name}
                   <ArrowUpRight className="w-4 h-4 ml-0.5" />
                 </a>
@@ -248,7 +248,7 @@ export default function Page() {
         <ul className="space-y-3 md:text-sm text-xs text-gray-600">
             <li>
               <a
-               target="_blank"
+               target="_blank" rel="noreferrer"
                 href="https://twitter.com/rahu1o1"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
@@ -257,7 +257,7 @@ export default function Page() {
               </a>
               {" (@rahu1o1) & "}
               <a
-               target="_blank"
+               target="_blank" rel="noreferrer"
                 href="https://instagram.com/r4hu1ok"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
@@ -268,19 +268,19 @@ export default function Page() {
               {" (@r4hu1ok)"}
             </li>
             <li>
-              <a target="_blank" href="https://t.me/r4hu1k" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+              <a target="_blank" rel="noreferrer" href="https://t.me/r4hu1k" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 Telegram <FaTelegramPlane className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (@r4hu1k)"}
             </li>
             <li>
-              <a target="_blank" href="https://github.com/rahulsingh2312" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+              <a target="_blank" rel="noreferrer" href="https://github.com/rahulsingh2312" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 Github <Github className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (@rahulsingh2312)"}
             </li>
             <li>
-              <a target="_blank" href="https://www.linkedin.com/in/rahulsinghhh2312/" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/rahulsinghhh2312/" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 Linked <Linkedin className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
               {" (@rahulsinghhh2312)"}

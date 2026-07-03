@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 export default function WeatherWidget({ city, country }) {
   const [temperature, setTemperature] = useState(null);
   const [condition, setCondition] = useState("");
-  const [time, setTime] = useState(null);
   const [timephone, setTimephone] = useState(null);
 
   useEffect(() => {
@@ -18,18 +17,6 @@ export default function WeatherWidget({ city, country }) {
         setTemperature(Math.round(data.main.temp));
         setCondition(data.weather[0].description); // Get weather condition (e.g., "cloudy")
 
-        // Calculate sunrise and sunset
-        const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString("en-US", {
-          hour: "2-digit",
-          minute: "2-digit",
-          timeZone: "Pacific/Honolulu",
-        });
-        const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString("en-US", {
-          hour: "2-digit",
-          minute: "2-digit",
-          timeZone: "Pacific/Honolulu",
-        });
-
         const now = new Date();
         const currentTime = now.toLocaleTimeString("en-US", {
           hour: "2-digit",
@@ -37,8 +24,6 @@ export default function WeatherWidget({ city, country }) {
           timeZone: "Asia/Kolkata",
         });
 
-        const isNight = now >= new Date(data.sys.sunset * 1000) || now <= new Date(data.sys.sunrise * 1000);
-        setTime(`${currentTime} ${isNight ? "Night ( i can see 🌙 )" : "Day ( i can see sun ☀️ )"}`);
         setTimephone(`${currentTime} `);
       } catch (error) {
         console.error("Error fetching weather data:", error);
