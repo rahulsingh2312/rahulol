@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { BsTwitterX } from "react-icons/bs";
 import { GrInstagram } from "react-icons/gr";
+import { FaTelegramPlane } from "react-icons/fa";
 import { Sling as Hamburger } from 'hamburger-react';
 import '../App.css'
 
@@ -147,9 +148,9 @@ function Navbar({ toggleNav }) {
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/rrahulol/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/r4hu1ok/" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                  <GrInstagram /> &nbsp; @rrahulol &nbsp; <HiOutlineArrowUpRight />
+                  <GrInstagram /> &nbsp; @r4hu1ok &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
@@ -161,17 +162,16 @@ function Navbar({ toggleNav }) {
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/rrahulol" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/rahu1o1" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                <BsTwitterX />  &nbsp; @rrahulol &nbsp; <HiOutlineArrowUpRight />
+                <BsTwitterX />  &nbsp; @rahu1o1 &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>
-           
             <li>
-              <a href="Your_WhatsApp_Link" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/r4hu1k" target="_blank" rel="noopener noreferrer">
                 <div className='flex justify-start ml-5 items-center'>
-                &nbsp; Twitter &nbsp; <HiOutlineArrowUpRight />
+                <FaTelegramPlane />  &nbsp; @r4hu1k &nbsp; <HiOutlineArrowUpRight />
                 </div>
               </a>
             </li>

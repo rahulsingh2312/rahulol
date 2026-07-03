@@ -2,6 +2,7 @@ import { ArrowUpRight, Linkedin } from "lucide-react";
 import WeatherWidget from "./components/weather-widget";
 import { Tooltip } from "./components/tooltip.js"; // Assuming you have a Tooltip component
 import { Github , Twitter , Instagram ,Mail } from 'lucide-react';
+import { FaTelegramPlane } from 'react-icons/fa';
 
 export default function Page() {
   return (
@@ -13,43 +14,45 @@ export default function Page() {
         <div className="md:flex  justify-between font-inter text-gray-400 text-base leading-7 items-start gap-16 mb-16">
         <div className="flex-1 md:w-1/2">
         <header className="flex justify-between items-start md:mb-12">
-          <a href="https://x.com/rrahulol" target="_blank" className="group" rel="noreferrer">
+          <a href="https://x.com/rahu1o1" target="_blank" className="group" rel="noreferrer">
             <h1 className="md:text-3xl text-2xl my-2 text-gray-500 font-semibold hover:text-gray-600 transition-colors">
-              rrahulol
+              r4hu1
             </h1>
             <WeatherWidget city="Mumbai" country="IN" />
           </a>
         </header>
         <p className="text-gray-600 text-xs md:text-sm my-5 md:mb-16">
-             Hi i'm rahul i help in building internet companies for .fun This is where i document my journey.
+             Hi i'm rahul, a quant & fullstack dev trading crypto markets and building internet companies for .fun. This is where i document my journey.
             </p>
 
             <section className="mb-16">
               <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Summary</h2>
               <ul className="space-y-4 md:text-sm text-xs text-gray-600">
-                <li>20 year old developer & quant for internet based assets. </li>
-                <li>Computer science engineer & tortured artist </li>
+                <li><span className="font-medium text-gray-900">21</span> year old <em>developer & quant</em> for internet based assets. </li>
                 <li>
-                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> Catoff gaming as React Native Dev, </a> <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch as Solana Dev</a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech as FullStack Dev</a>, 4x Hackathon Winner.
+                Was <span className="font-medium text-gray-900">#1</span> on   <a className="underline" href="https://gmgn.ai/" target="_blank">
+              GMGN.ai
+               </a> <span className="font-medium text-gray-900">PnL Leaderboard</span>.
+
+               </li>
+                <li>
+                <em>Quant & FullStack Dev</em> at <a className="underline" href="https://x.com/insidersdotbot" target="_blank">Insiders.bot</a>, built a real-time Polymarket trading system <span className="font-medium text-gray-900">10-20s faster</span> than Polymarket itself, driving <span className="font-medium text-gray-900">$1.3M+</span> in volume.
+                </li>
+                <li>Computer science engineer & <em>tortured artist</em> </li>
+                <li>
+                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank"> Catoff gaming as <em>React Native Dev</em>, </a> <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank"> Chain Launch as <em>Solana Dev</em></a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank"> Vighnotech as <em>FullStack Dev</em></a>, <span className="font-medium text-gray-900">4x Hackathon Winner</span>.
                 </li>
                <li>
-                <a className="underline" href="https://superteam.fun/" target="_blank"> 
+                <a className="underline" href="https://superteam.fun/" target="_blank">
                SuperteamIN Member.
                </a>
                </li>
-               <li>
-              
-               Was #1 on   <a className="underline" href="https://gmgn.ai/" target="_blank"> 
-              GMGN.ai
-               </a> PnL Leaderboard. 
-               
-               </li>
-                <li>Previously Co-Founded <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">nutrisnap</a> 25k+ users, 3mil+ views on <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">socials</a> </li>
+                <li>Previously Co-Founded <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">nutrisnap</a> <span className="font-medium text-gray-900">25k+ users, 3mil+ views</span> on <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank">socials</a> </li>
                 {/* <li>Currently trying to transition from selling time to starting my own companies</li> */}
                 <li>Currently trying to make impact with my code</li>
                 <li>
                   I write about my life on {" "}
-                  <a href="https://x.com/rrahulol" target="_blank" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                  <a href="https://x.com/rahu1o1" target="_blank" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                     Twitter || X
                     <ArrowUpRight className="w-4 h-4 ml-0.5" />
                   </a>
@@ -60,6 +63,9 @@ export default function Page() {
   <h2 className="md:text-sm text-xs text-gray-400 mb-3">Projects</h2>
   <ul className="space-y-4 md:text-sm text-xs text-gray-600">
     {[
+      { name: "GasFeesBot", desc: "Send any token you hold, get native gas on any chain instantly, no sign-up, no KYC", link: "https://t.me/getgasfeesbot", date: "2026" },
+      { name: "Viral City", desc: "AI UGC engine for viral, monetizable short-form video content", link: "https://viral-city.cityprotocol.co", date: "2025" },
+      { name: "Totem", desc: "AI to 3D asset generation: mint, sell & print your own figurines", link: "https://totem.cityprotocol.co", date: "2025" },
       { name: "Mytakes.fun", desc: "Live on Solana Dapp store, pumpfun x polymarket two way markets", link: "https://x.com/takes_mobile/status/1958976229425782935", date: "2025" },
       { name: "Cookchat.fun", desc: "Token Gated Chat for all meme tokens, only accessible if u hold 0.1 sol worth of it.", link: "https://cookchat.fun", date: "2025" },
       { name: "Lottos.wtf", desc: "Launchpad but for lotteries live on mainnet", link: "https://lottos.wtf", date: "2025" },
@@ -95,16 +101,16 @@ export default function Page() {
 {/* Right Section */}
 <div className="w-[90%] mx-auto md:w-1/2 shrink-0 order-first md:order-last flex flex-col items-center">
     <img
-      src="/stra.jpg"
-      alt="Profile photo at a gathering"
+      src="/gmgn-degen-everyday.png"
+      alt="GMGN Degen Everyday"
       width={360}
       height={360}
       className="mb-6 md:mb-0"
     />
-    <a href="https://solscan.io/account/GkbaZj4r9NcCs6Droq6kbJwvP5gqfeSdSSMCxQuZxTcm" target="_blank">
+    <a href="https://solscan.io/account/rAhULHBrf2yGuANDuAGLuUTKuLCW17t86T8T6vGcuok" target="_blank">
     <Tooltip content="Track Rahul onchain">
       <p className="md:text-sm text-xs mt- md:mt-6 text-gray-400 hover:text-gray-500 transition-colors cursor-pointer text-center">
-        GkbaZj4r9NcCs6Droq6kbJwvP5gqfeSdSSMCxQuZxTcm
+        rAhULHBrf2yGuANDuAGLuUTKuLCW17t86T8T6vGcuok
       </p>
     </Tooltip>
     </a>
@@ -156,23 +162,29 @@ export default function Page() {
             <li>
               <a
                target="_blank"
-                href="https://twitter.com/rrahulol"
+                href="https://twitter.com/rahu1o1"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
                 Twitter <Twitter className="w-4 h-4 ml-0.5" />
                 <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
-              {" & "}
+              {" (@rahu1o1) & "}
               <a
                target="_blank"
-                href="https://instagram.com/rrahulol"
+                href="https://instagram.com/r4hu1ok"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
-                Instagram 
+                Instagram
                 <Instagram  className="w-4 h-4 ml-0.5"/>
                 <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
-              {" (@rrahulol)"}
+              {" (@r4hu1ok)"}
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/r4hu1k" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                Telegram <FaTelegramPlane className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
+              </a>
+              {" (@r4hu1k)"}
             </li>
             <li>
               <a target="_blank" href="https://github.com/rahulsingh2312" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
@@ -202,7 +214,10 @@ export default function Page() {
         Projects</h2>
           <ul className="space-y-4 md:text-sm text-xs text-gray-600">
             {[
-            { name: "Mytakes.fun", desc: "Live on Solana Dapp store, pumpfun x polymarket two way markets", link: "https://x.com/takes_mobile/status/1958976229425782935", date: "2025" },
+            { name: "GasFeesBot", desc: "Send any token you hold, get native gas on any chain instantly, no sign-up, no KYC", link: "https://t.me/getgasfeesbot", date: "2026" },
+            { name: "Viral City", desc: "AI UGC engine for viral, monetizable short-form video content", link: "https://viral-city.cityprotocol.co", date: "2025" },
+            { name: "Totem", desc: "AI to 3D asset generation: mint, sell & print your own figurines", link: "https://totem.cityprotocol.co", date: "2025" },
+      { name: "Mytakes.fun", desc: "Live on Solana Dapp store, pumpfun x polymarket two way markets", link: "https://x.com/takes_mobile/status/1958976229425782935", date: "2025" },
             { name: "Cookchat.fun", desc: "Token Gated Chat for all meme tokens, only accessible if u hold 0.1 sol worth of it.", link: "https://cookchat.fun", date: "2025" },
             { name: "Lottos.wtf", desc: "Launchpad but for lotteries live on mainnet", link: "https://lottos.wtf", date: "2025" },
             // { name: "Wealthify", desc: "App to Analyze assets, reduce liabilities, and find tailored investment opportunities", link: "https://www.thewealthify.me/", date: "2024" },
@@ -234,23 +249,29 @@ export default function Page() {
             <li>
               <a
                target="_blank"
-                href="https://twitter.com/rrahulol"
+                href="https://twitter.com/rahu1o1"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
                 Twitter <Twitter className="w-4 h-4 ml-0.5" />
                 <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
-              {" & "}
+              {" (@rahu1o1) & "}
               <a
                target="_blank"
-                href="https://instagram.com/rrahulol"
+                href="https://instagram.com/r4hu1ok"
                 className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
               >
-                Instagram 
+                Instagram
                 <Instagram  className="w-4 h-4 ml-0.5"/>
                 <ArrowUpRight className="w-4 h-4 ml-0.5" />
               </a>
-              {" (@rrahulol)"}
+              {" (@r4hu1ok)"}
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/r4hu1k" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
+                Telegram <FaTelegramPlane className="w-4 h-4 ml-0.5" />    <ArrowUpRight className="w-4 h-4 ml-0.5" />
+              </a>
+              {" (@r4hu1k)"}
             </li>
             <li>
               <a target="_blank" href="https://github.com/rahulsingh2312" className="text-gray-900 underline inline-flex items-center hover:text-gray-600">

@@ -1,0 +1,114 @@
+THEIR MESSAGE
+=============
+third eye, the quant firm is hiring for full time!
+
+these are the open roles:
+1. Vol PM to trade crypto and equity options
+2. Head of research who can do deep dive
+3. Crypto equities trader/PM who can look at stocks fundamentally
+4. Crypto trader/PM who's generally more native to crypto (tradfi background helps)
+
+https://www.third-eye.co/
+
+feel free to have students dm me their resumes on telegram!
+
+
+MY REPLY - PICK ONE (targeting role 4, crypto trader/PM crypto-native - best match)
+====================================================================================
+
+VARIANT A - metrics first, tightest
+------------------------------------
+Hi — applying for the Crypto trader/PM (crypto-native) role.
+
+- Was #1 on GMGN.ai's PnL leaderboard.
+- Built Insiders.bot: a live Polymarket trading system indexing Polygon 10-20s ahead of Polymarket's own APIs, driving $1.32M+ in volume at scale for 1000s of users.
+- 5x hackathon podiums across Solana/blockchain (2 wins).
+- Full-stack + Solidity + Rust — lots of programs shipped on Solana mainnet.
+- Co-founded Nutrisnap to 25k+ users, 3M+ views — 0-to-1 ownership.
+
+Up for a call whenever you're free.
+
+Resume: app.rezi.ai/s/r4hu1
+Everything else: rahul.monster
+X: x.com/rahu1o1
+
+
+VARIANT B - infra/edge first (leans quant-engineering angle)
+--------------------------------------------------------------
+Hi — applying for the Crypto trader/PM (crypto-native) role.
+
+I build the edge, then I trade it. Built Insiders.bot: a live Polymarket trading system indexing Polygon 10-20s ahead of Polymarket's own APIs, driving $1.32M+ in volume at scale for 1000s of users. Was also #1 on GMGN.ai's PnL leaderboard, trading my own book.
+
+- 5x hackathon podiums across Solana/blockchain (2 wins).
+- Full-stack + Solidity + Rust — lots of programs shipped on Solana mainnet.
+- Co-founded Nutrisnap to 25k+ users, 3M+ views — 0-to-1 ownership.
+
+Up for a call whenever you're free.
+
+Resume: app.rezi.ai/s/r4hu1
+Everything else: rahul.monster
+X: x.com/rahu1o1
+
+
+VARIANT C - ultra short
+------------------------
+Hi — applying for the Crypto trader/PM (crypto-native) role.
+
+#1 on GMGN.ai's PnL leaderboard. Built Insiders.bot — a Polymarket trading system 10-20s faster than Polymarket's own APIs, $1.32M+ volume. 5x hackathon podiums, full-stack + Solidity + Rust, co-founded Nutrisnap to 25k+ users.
+
+Resume: app.rezi.ai/s/r4hu1 · rahul.monster · x.com/rahu1o1
+Free for a call whenever.
+
+
+VARIANT D - warmer open, same bullets as A
+---------------------------------------------
+Hi — saw the Crypto trader/PM (crypto-native) role, want to throw my name in.
+
+- Was #1 on GMGN.ai's PnL leaderboard.
+- Built Insiders.bot: a live Polymarket trading system indexing Polygon 10-20s ahead of Polymarket's own APIs, driving $1.32M+ in volume at scale for 1000s of users.
+- 5x hackathon podiums across Solana/blockchain (2 wins).
+- Full-stack + Solidity + Rust — lots of programs shipped on Solana mainnet.
+- Co-founded Nutrisnap to 25k+ users, 3M+ views — 0-to-1 ownership.
+
+Free whenever you want to talk.
+
+Resume: app.rezi.ai/s/r4hu1
+Everything else: rahul.monster
+X: x.com/rahu1o1
+
+
+REZI RESUME TODO (still open, do these before sending)
+=========================================================
+1. Speed edge: resume PDF still says "~15-20s faster" (checked latest export, unchanged) - message says "10-20s". Match one number everywhere.
+2. Add "Was #1 on GMGN.ai PnL Leaderboard" to resume - still not on it, only on rahul.monster.
+3. Reorder PROJECT section on Rezi: Viral City and Totem to top (done on the site, not on Rezi).
+4. Confirm X handle is rahu1o1 (used in this file) not rahu101 - the two got mixed up earlier, pick one and use everywhere.
+
+
+PROJECTS: WEBSITE vs RESUME - WHAT TO KEEP/CUT FOR THIS APPLICATION
+======================================================================
+Website has 13 projects, resume PROJECT section has 7. Resume is on Rezi (missing: Mytakes.fun, REWINDAI, S.I.C.K., yen.fyi, Emoji Buy, GasFeesBot).
+
+For a quant/trading recruiter, the resume should read as "trader who builds," not "builder who did some crypto stuff." Cut anything purely consumer/creative with no market/financial mechanic - it dilutes the pitch and invites "why is this on a trading resume" questions.
+
+KEEP / ADD (direct signal: markets, odds, real money, incentive design):
+- Mytakes.fun — NOT on resume currently, ADD IT. "pumpfun x polymarket two way markets" is literally a prediction market product — more relevant to this job than half of what's already listed.
+- Lottos.wtf — on-chain lottery, mainnet, real payouts. Probability/EV mechanics.
+- PureBet — real-money sports betting, odds/settlement.
+- $DBAS — tokenomics/incentive design (deflationary supply, staking APY). Shows quant thinking about mechanism design.
+- GasFeesBot — new, cross-chain infra, instant execution. Reinforces the "I build fast infra" theme from Insiders.bot.
+
+CUT (no market/quant relevance, weakens focus for THIS audience — fine to leave on rahul.monster, just not the resume going to Third Eye):
+- Viral City — consumer AI content tool. Zero trading/quant signal.
+- Totem — AI-to-3D-print consumer app. Same issue.
+- Cookchat.fun — token-gated chat. Crypto-adjacent but not market/trading relevant. Weakest of the remaining set.
+
+BORDERLINE (your call):
+- Nutrisnap — no quant relevance at all, but 20k+ users / 3M+ views is a real 0-to-1 scale proof point. Keep only if you want one "I can ship and grow a product" line; cut if you want the resume laser-focused on trading/markets.
+
+Suggested resume PROJECT list for this application (5 items, tight):
+1. Mytakes.fun
+2. Lottos.wtf
+3. PureBet
+4. $DBAS
+5. GasFeesBot
