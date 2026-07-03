@@ -47,7 +47,7 @@ export default function Page() {
                SuperteamIN Member.
                </a>
                </li>
-                <li>Previously Co-Founded <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank" rel="noreferrer">nutrisnap</a> <span className="font-medium text-gray-900">25k+ users, 3mil+ views</span> on <a className="underline" href="https://www.instagram.com/nutrisnap.ai/" target="_blank" rel="noreferrer">socials</a> </li>
+                <li>Previously Co-Founded nutrisnap <span className="font-medium text-gray-900">25k+ users, 3mil+ views</span> on socials </li>
                 {/* <li>Currently trying to transition from selling time to starting my own companies</li> */}
                 <li>Currently trying to make impact with my code</li>
                 <li>
@@ -70,12 +70,11 @@ export default function Page() {
       { name: "Cookchat.fun", desc: "Token Gated Chat for all meme tokens, only accessible if u hold 0.1 sol worth of it.", link: "https://cookchat.fun", date: "2025" },
       { name: "Lottos.wtf", desc: "Launchpad but for lotteries live on mainnet", link: "https://lottos.wtf", date: "2025" },
       // { name: "Wealthify", desc: "App to Analyze assets, reduce liabilities, and find tailored investment opportunities", link: "https://www.thewealthify.me/", date: "2024" },
-      { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data", link: "https://solanarewind.fun/", date: "2024" },
-      { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash", link: "https://sickfreak.club/", date: "2024" },
+      { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data", link: "https://x.com/SolanaRewindAI/status/1888284335725502613?s=20", demo: "https://www.youtube.com/watch?v=lsR8FiWw_S4", date: "2024" },
+      { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash", link: "https://www.youtube.com/watch?v=m-T75VVZ3l4", date: "2024" },
       { name: "Nutrisnap", desc: "Know about your food from just a snap", link: "https://nutrisnapai2.vercel.app", date: "2023–24" },
-      { name: "yen.fyi", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts", link: "https://yen.fyi", date: "2024" },
+      { name: "yen.fyi", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts", link: "https://yenv1.vercel.app/", date: "2024" },
       { name: "Purebet", desc: "Onchain sports betting app", link: "https://purebetv2.vercel.app/", date: "2024" },
-      { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens", link: "https://emojibuy.fun", date: "2024" },
       { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link: "https://dbascoin.vercel.app/", date: "2023" },
       ].map((project) => (
       <li key={project.name}>
@@ -85,9 +84,19 @@ export default function Page() {
           className="text-gray-900 underline inline-flex items-center hover:text-gray-600"
         >
           {project.name}
-        
+
           <ArrowUpRight className="w-4 h-4 ml-0.5" />
         </a>
+        {project.demo && (
+          <a
+            target="_blank" rel="noreferrer"
+            href={project.demo}
+            className="text-gray-900 underline inline-flex items-center hover:text-gray-600 ml-1"
+          >
+            demo
+            <ArrowUpRight className="w-4 h-4 ml-0.5" />
+          </a>
+        )}
         <span className="text-gray-400 ml-1 ">· {project.date} · </span>
         <span className="ml-1">{project.desc}</span>
       </li>
@@ -222,19 +231,24 @@ export default function Page() {
             { name: "Lottos.wtf", desc: "Launchpad but for lotteries live on mainnet", link: "https://lottos.wtf", date: "2025" },
             // { name: "Wealthify", desc: "App to Analyze assets, reduce liabilities, and find tailored investment opportunities", link: "https://www.thewealthify.me/", date: "2024" },
 
-            { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data", link: "https://solanarewind.fun/", date: "2024" },
-            { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash", link: "https://sickfreak.club/", date: "2024" },
+            { name: "REWINDAI", desc: "AI agent that roasts you based on your onchain data", link: "https://x.com/SolanaRewindAI/status/1888284335725502613?s=20", demo: "https://www.youtube.com/watch?v=lsR8FiWw_S4", date: "2024" },
+            { name: "S.I.C.K.", desc: "Users can create token crates, earn referral cash", link: "https://www.youtube.com/watch?v=m-T75VVZ3l4", date: "2024" },
             { name: "Nutrisnap", desc: "Know about your food from just a snap", link: "https://nutrisnapai2.vercel.app", date: "2023–24" },
-            { name: "yen.fyi", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts", link: "https://yen.fyi", date: "2024" },
+            { name: "yen.fyi", desc: "Site for a token 💹, ai eyes, nfts, swaps, charts", link: "https://yenv1.vercel.app/", date: "2024" },
             { name: "Purebet", desc: "Onchain sports betting app", link: "https://purebetv2.vercel.app/", date: "2024" },
-            { name: "Emoji Buy", desc: "Buy your fav emoji which are actually tokens", link: "https://emojibuy.fun", date: "2024" },
-            { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link: "https://dbascoin.vercel.app/", date: "2023" },
+                  { name: "DBAS Coin", desc: "A token where every week the token supply is randomly reduced, sparking demand and driving prices upward", link: "https://dbascoin.vercel.app/", date: "2023" },
               ].map((project) => (
               <li key={project.name}>
                 <a target="_blank" rel="noreferrer" href={project.link} className="text-gray-900 underline inline-flex items-center hover:text-gray-600">
                 {project.name}
                   <ArrowUpRight className="w-4 h-4 ml-0.5" />
                 </a>
+                {project.demo && (
+                  <a target="_blank" rel="noreferrer" href={project.demo} className="text-gray-900 underline inline-flex items-center hover:text-gray-600 ml-1">
+                    demo
+                    <ArrowUpRight className="w-4 h-4 ml-0.5" />
+                  </a>
+                )}
                 <span className="text-gray-400 ml-1">· {project.date} · </span>
                 <span className="ml-1">{project.desc}</span>
               </li>
