@@ -1,5 +1,6 @@
 import { ArrowUpRight, Linkedin } from "lucide-react";
 import WeatherWidget from "./components/weather-widget";
+import GithubCalendar from "./components/github-calendar";
 import { Tooltip } from "./components/tooltip.js"; // Assuming you have a Tooltip component
 import { Github , Twitter , Instagram ,Mail } from 'lucide-react';
 import { FaTelegramPlane } from 'react-icons/fa';
@@ -63,7 +64,7 @@ export default function Page() {
   <h2 className="md:text-sm text-xs text-gray-400 mb-3">Projects</h2>
   <ul className="space-y-4 md:text-sm text-xs text-gray-600">
     {[
-      { name: "GasFeesBot", desc: "Send any token you hold, get native gas on any chain instantly, no sign-up, no KYC", link: "https://t.me/getgasfeesbot", date: "2026" },
+      { name: "GasFeesBot", desc: "Send any token you hold, get native gas on any chain instantly, no sign-up, no KYC", link: "https://t.me/getgasfeesbot", demo: "https://x.com/GasFeesbot/status/2072705544217891299?s=20", date: "2026" },
       { name: "Viral City", desc: "AI UGC engine for viral, monetizable short-form video content", link: "https://viral-city.cityprotocol.co", date: "2025" },
       { name: "Totem", desc: "AI to 3D asset generation: mint, sell & print your own figurines", link: "https://totem.cityprotocol.co", date: "2025" },
       { name: "Mytakes.fun", desc: "Live on Solana Dapp store, pumpfun x polymarket two way markets", link: "https://x.com/takes_mobile/status/1958976229425782935", date: "2025" },
@@ -87,18 +88,16 @@ export default function Page() {
 
           <ArrowUpRight className="w-4 h-4 ml-0.5" />
         </a>
-        {project.demo && (
-          <a
-            target="_blank" rel="noreferrer"
-            href={project.demo}
-            className="text-gray-900 underline inline-flex items-center hover:text-gray-600 ml-1"
-          >
-            demo
-            <ArrowUpRight className="w-4 h-4 ml-0.5" />
-          </a>
-        )}
         <span className="text-gray-400 ml-1 ">· {project.date} · </span>
         <span className="ml-1">{project.desc}</span>
+        {project.demo && (
+          <>
+            {" "}
+            <a target="_blank" rel="noreferrer" href={project.demo} className="underline text-gray-500 hover:text-gray-700">
+              demo
+            </a>
+          </>
+        )}
       </li>
     ))}
   </ul>
@@ -114,8 +113,9 @@ export default function Page() {
       alt="GMGN Degen Everyday"
       width={360}
       height={360}
-      className="mb-6 md:mb-0"
+      className="mb-0 md:mb-0"
     />
+    <GithubCalendar username="rahulsingh2312" />
     <a href="https://solscan.io/account/rAhULHBrf2yGuANDuAGLuUTKuLCW17t86T8T6vGcuok" target="_blank" rel="noreferrer">
     <Tooltip content="Track Rahul onchain">
       <p className="md:text-sm text-xs mt- md:mt-6 text-gray-400 hover:text-gray-500 transition-colors cursor-pointer text-center">
@@ -223,7 +223,7 @@ export default function Page() {
         Projects</h2>
           <ul className="space-y-4 md:text-sm text-xs text-gray-600">
             {[
-            { name: "GasFeesBot", desc: "Send any token you hold, get native gas on any chain instantly, no sign-up, no KYC", link: "https://t.me/getgasfeesbot", date: "2026" },
+            { name: "GasFeesBot", desc: "Send any token you hold, get native gas on any chain instantly, no sign-up, no KYC", link: "https://t.me/getgasfeesbot", demo: "https://x.com/GasFeesbot/status/2072705544217891299?s=20", date: "2026" },
             { name: "Viral City", desc: "AI UGC engine for viral, monetizable short-form video content", link: "https://viral-city.cityprotocol.co", date: "2025" },
             { name: "Totem", desc: "AI to 3D asset generation: mint, sell & print your own figurines", link: "https://totem.cityprotocol.co", date: "2025" },
       { name: "Mytakes.fun", desc: "Live on Solana Dapp store, pumpfun x polymarket two way markets", link: "https://x.com/takes_mobile/status/1958976229425782935", date: "2025" },
@@ -243,14 +243,16 @@ export default function Page() {
                 {project.name}
                   <ArrowUpRight className="w-4 h-4 ml-0.5" />
                 </a>
-                {project.demo && (
-                  <a target="_blank" rel="noreferrer" href={project.demo} className="text-gray-900 underline inline-flex items-center hover:text-gray-600 ml-1">
-                    demo
-                    <ArrowUpRight className="w-4 h-4 ml-0.5" />
-                  </a>
-                )}
                 <span className="text-gray-400 ml-1">· {project.date} · </span>
                 <span className="ml-1">{project.desc}</span>
+                {project.demo && (
+                  <>
+                    {" "}
+                    <a target="_blank" rel="noreferrer" href={project.demo} className="underline text-gray-500 hover:text-gray-700">
+                      demo
+                    </a>
+                  </>
+                )}
               </li>
             ))}
           </ul>
