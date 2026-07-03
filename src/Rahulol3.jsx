@@ -40,7 +40,7 @@ export default function Page() {
                 </li>
                 <li>Computer science engineer & <em>tortured artist</em> </li>
                 <li>
-                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank" rel="noreferrer"> Catoff gaming as <em>React Native Dev</em>, </a> <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank" rel="noreferrer"> Chain Launch as <em>Solana Dev</em></a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank" rel="noreferrer"> Vighnotech as <em>FullStack Dev</em></a>, <span className="font-medium text-gray-900">4x Hackathon Winner</span>.
+                Worked at multiple onchain Startups like <a className="underline" href="https://www.catoff.xyz/" target="_blank" rel="noreferrer"> Catoff gaming as <em>React Native Dev</em>, </a> <a className="underline" href="https://www.chainlaunch.xyz/" target="_blank" rel="noreferrer"> Chain Launch as <em>Solana Dev</em></a> & Web 2 startups like <a className="underline" href="https://vighnotech.com/" target="_blank" rel="noreferrer"> Vighnotech as <em>FullStack Dev</em></a>, <span className="font-medium text-gray-900">5x Hackathon Winner</span>.
                 </li>
                <li>
                 <a className="underline" href="https://superteam.fun/" target="_blank" rel="noreferrer">
