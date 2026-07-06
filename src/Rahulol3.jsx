@@ -144,27 +144,40 @@ export default function Page() {
           ))}
         </ul>
       </section>
-      <section>
-      <h2 className="md:text-sm text-xs  mt-5 text-gray-400 mb-3">Writings</h2>
-      <ul className="space-y-3">
-          {[
-            { date: "16/04/25", title: "Spam to Scams"  , link :"https://medium.com/@rahulsinghhh2312/spam-to-scams-dirty-dev-tricks-with-dusting-address-poisoning-on-solana-27a1c30a8325"},
-            { date: "15/01/25", title: "UBI Using Crypto Powered Ai agents" , link :"https://medium.com/@rahulsinghhh2312/enabling-universal-basic-income-through-crypto-powered-ai-agents-ed65f1eb377d" },
-            { date: "29/08/24", title: "Infra Providers Fu*king you over", link:"https://medium.com/@rahulsinghhh2312/stop-using-nextjs-before-its-too-late-13c35f5b076f" },
-            // { date: "23.9.23", title: "Catching Up With The Boys" },
-            // { date: "27.6.23", title: "The Problem with AI Apps" },
-            // { date: "8.12.22", title: "Why Siri Sucks" },
-            // { date: "22.5.22", title: "Solving the Web3 UX Problem" },
-          ].map((post) => (
-            <li className="md:text-sm text-xs" key={post.title}>
-              <span className="text-gray-500">{post.date}</span>{" "}{" "}
+<section>
+  <h2 className="md:text-sm text-xs mt-5 text-gray-400 mb-3">Writings</h2>
+  <ul className="space-y-3">
+    {[
+      { date: "05/07/26", title: "How We Built a Data Engine That Runs", titleCont: "10–20 Seconds Ahead of Polymarket", link: "https://medium.com/@rahulsinghhh2312/spam-to-scams-dirty-dev-tricks-with-dusting-address-poisoning-on-solana-27a1c30a8325" },
+      { date: "16/04/25", title: "Spam to Scams", link: "https://medium.com/@rahulsinghhh2312/spam-to-scams-dirty-dev-tricks-with-dusting-address-poisoning-on-solana-27a1c30a8325" },
+      { date: "15/01/25", title: "UBI Using Crypto Powered Ai agents", link: "https://medium.com/@rahulsinghhh2312/enabling-universal-basic-income-through-crypto-powered-ai-agents-ed65f1eb377d" },
+      { date: "29/08/24", title: "Infra Providers Fu*king you over", link: "https://medium.com/@rahulsinghhh2312/stop-using-nextjs-before-its-too-late-13c35f5b076f" },
+    ].map((post) => (
+      <li key={post.title} className="md:text-sm text-xs">
+        {post.titleCont ? (
+          <div>
+            <span className="text-gray-500">{post.date}</span>{" "}
+            <a target="_blank" rel="noreferrer" href={post.link} className="text-gray-900 underline hover:text-gray-600">
+              {post.title}
+            </a>
+            <div style={{ paddingLeft: "4.5rem" }}>
               <a target="_blank" rel="noreferrer" href={post.link} className="text-gray-900 underline hover:text-gray-600">
-                {post.title}
+                {post.titleCont}
               </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+            </div>
+          </div>
+        ) : (
+          <span>
+            <span className="text-gray-500">{post.date}</span>{" "}
+            <a target="_blank" rel="noreferrer" href={post.link} className="text-gray-900 underline hover:text-gray-600">
+              {post.title}
+            </a>
+          </span>
+        )}
+      </li>
+    ))}
+  </ul>
+</section>
       <section className="mb-5 md:mt-14 hidden md:block md:mb-16">
         <h2 className="md:text-sm text-xs  text-gray-400 mb-3">Connect</h2>
         <ul className="space-y-3 md:text-sm text-xs text-gray-600">

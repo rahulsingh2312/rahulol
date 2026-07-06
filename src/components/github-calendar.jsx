@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const COLORS = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"];
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const WEEKDAYS = ["", "M", "", "W", "", "F", ""];
 const CELL = 11;
 const GAP = 3;
+const LABEL_WIDTH = CELL + GAP + 4;
 
 function dayOfWeek(dateStr) {
   const [y, m, d] = dateStr.split("-").map(Number);
@@ -38,14 +39,18 @@ function toColumns(days) {
 
 function Calendar({ columns }) {
   let lastMonth = null;
+  let lastLabelCol = -Infinity;
+  const MIN_LABEL_GAP = 3;
 
   return (
-    <div style={{ display: "inline-block" }}>
-      <div style={{ display: "flex", gap: GAP, marginBottom: 4, marginLeft: CELL + GAP + 4 }}>
+    <div style={{ display: "inline-block", maxWidth: "100%" }}>
+      <div style={{ display: "flex", gap: GAP, marginBottom: 4, marginLeft: LABEL_WIDTH }}>
         {columns.map((col, ci) => {
           const m = monthOf(col.find(Boolean));
-          const show = m !== null && m !== lastMonth;
-          if (show) lastMonth = m;
+          const isNewMonth = m !== null && m !== lastMonth;
+          if (m !== null) lastMonth = m;
+          const show = isNewMonth && ci - lastLabelCol >= MIN_LABEL_GAP;
+          if (show) lastLabelCol = ci;
           return (
             <div
               key={ci}
@@ -80,7 +85,7 @@ function Calendar({ columns }) {
               {col.map((day, ri) => (
                 <div
                   key={ri}
-                  title={day ? `${day.count} contributions on ${day.date}` : undefined}
+                  title={day ? day.count + " contributions on " + day.date : undefined}
                   style={{
                     width: CELL,
                     height: CELL,
@@ -99,33 +104,53 @@ function Calendar({ columns }) {
 
 export default function GithubCalendar({ username }) {
   const [days, setDays] = useState(null);
+  const [maxCols, setMaxCols] = useState(null);
+  const wrapperRef = useRef(null);
 
   useEffect(() => {
-    fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=last`)
-      .then((res) => res.json())
-      .then((data) => setDays(data.contributions || []))
-      .catch(() => setDays([]));
+    fetch("https://github-contributions-api.jogruber.de/v4/" + username + "?y=last")
+      .then(function(res) { return res.json(); })
+      .then(function(data) { setDays(data.contributions || []); })
+      .catch(function() { setDays([]); });
   }, [username]);
 
-  if (!days || days.length === 0) return null;
+  useEffect(() => {
+    const el = wrapperRef.current;
+    if (!el) return;
+    const perCol = CELL + GAP;
 
-  const fullColumns = toColumns(days);
-  const allColumns = fullColumns.slice(-36);
-  const mobileColumns = fullColumns.slice(-20);
+    function measure() {
+      const w = el.getBoundingClientRect().width;
+      if (w === 0) return; // not laid out yet, wait for ResizeObserver
+      const usable = w - LABEL_WIDTH;
+      const cols = Math.max(1, Math.floor(usable / perCol));
+      setMaxCols(cols);
+    }
+
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return function() { ro.disconnect(); };
+  }, []);
+
+  const ready = days && days.length > 0 && maxCols !== null;
+  const visibleColumns = ready ? toColumns(days).slice(-maxCols) : [];
 
   return (
-    <a
-      href={`https://github.com/${username}`}
-      target="_blank"
-      rel="noreferrer"
-      className="mt-5 md:mt-8 mb-10 md:mb-0 block max-w-full overflow-x-auto"
+    <div
+      ref={wrapperRef}
+      className="mt-5 md:mt-8 mb-10 md:mb-0 w-full overflow-hidden"
     >
-      <div className="hidden md:block">
-        <Calendar columns={allColumns} />
-      </div>
-      <div className="md:hidden">
-        <Calendar columns={mobileColumns} />
-      </div>
-    </a>
+      {ready && (
+        <a
+          href={"https://github.com/" + username}
+          target="_blank"
+          rel="noreferrer"
+          style={{ display: "block" }}
+        >
+          <Calendar columns={visibleColumns} />
+        </a>
+      )}
+    </div>
   );
 }

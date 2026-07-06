@@ -62,19 +62,19 @@ Free for a call whenever.
 
 VARIANT D - warmer open, same bullets as A
 ---------------------------------------------
-Hi — saw the Crypto trader/PM (crypto-native) role, want to throw my name in.
+Hi, saw the Crypto trader/PM (crypto-native) role, want to throw my name in.
 
-- Was #1 on GMGN.ai's PnL leaderboard.
-- Built Insiders.bot: a live Polymarket trading system indexing Polygon 10-20s ahead of Polymarket's own APIs, driving $1.32M+ in volume at scale for 1000s of users.
-- 5x hackathon podiums across Solana/blockchain (2 wins).
-- Full-stack + Solidity + Rust — lots of programs shipped on Solana mainnet.
-- Co-founded Nutrisnap to 25k+ users, 3M+ views — 0-to-1 ownership.
+Was #1 on GMGN.ai's PnL leaderboard.
+Built Insiders.bot: a live Polymarket trading system indexing Polygon 10-20s ahead of Polymarket's own APIs, driving $1.32M+ in volume at scale for 1000s of users.
+5x hackathon wins across Solana/blockchain.
+Full-stack + Solidity + Rust — lots of programs shipped on Solana mainnet.
+Co-founded Nutrisnap, to 25k+ users, 3M+ views.
 
 Free whenever you want to talk.
 
-Resume: app.rezi.ai/s/r4hu1
-Everything else: rahul.monster
-X: x.com/rahu1o1
+Resume: https://rahul.monster/resume
+Personal Website: https://rahul.monster
+X: https://x.com/rahu1o1
 
 
 REZI RESUME TODO (still open, do these before sending)
