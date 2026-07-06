@@ -148,7 +148,7 @@ export default function Page() {
   <h2 className="md:text-sm text-xs mt-5 text-gray-400 mb-3">Writings</h2>
   <ul className="space-y-3">
     {[
-      { date: "05/07/26", title: "How We Built a Data Engine That Runs", titleCont: "10–20 Seconds Ahead of Polymarket", link: "https://medium.com/@rahulsinghhh2312/spam-to-scams-dirty-dev-tricks-with-dusting-address-poisoning-on-solana-27a1c30a8325" },
+      { date: "05/07/26", title: "How We Built a Data Engine That Runs", titleCont: "10–20 Seconds Ahead of Polymarket", link: "https://x.com/rahu1o1/article/2073818617813356820" },
       { date: "16/04/25", title: "Spam to Scams", link: "https://medium.com/@rahulsinghhh2312/spam-to-scams-dirty-dev-tricks-with-dusting-address-poisoning-on-solana-27a1c30a8325" },
       { date: "15/01/25", title: "UBI Using Crypto Powered Ai agents", link: "https://medium.com/@rahulsinghhh2312/enabling-universal-basic-income-through-crypto-powered-ai-agents-ed65f1eb377d" },
       { date: "29/08/24", title: "Infra Providers Fu*king you over", link: "https://medium.com/@rahulsinghhh2312/stop-using-nextjs-before-its-too-late-13c35f5b076f" },
